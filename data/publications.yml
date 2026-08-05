@@ -1,8 +1,11 @@
 - title: "System-Wide Evaluation of Gold and Silver Recovery and Mercury Losses in an Artisanal Amalgamation--Cyanidation Circuit: A Diagnostic Approach to Mercury-Free Processing"
   authors: "Silva, Emiliano M.; da Veiga, Marcello M.; De Tomi, Giorgio"
+  authors_apa: "Silva, E. M., da Veiga, M. M., & De Tomi, G."
+  title_apa: "System-wide evaluation of gold and silver recovery and mercury losses in an artisanal amalgamation–cyanidation circuit: A diagnostic approach to mercury-free processing"
   journal: "Minerals"
   year: 2026
-  volume: "16(8)"
+  volume: "16"
+  issue: "8"
   pages: "784"
   doi: "10.3390/min16080784"
   url: "https://doi.org/10.3390/min16080784"
@@ -10,6 +13,8 @@
 
 - title: "From Byproduct to Business: A Conceptual Micro-Enterprise Model for Artisanal and Small-Scale Gold Mining (ASGM) Tailings in Suriname"
   authors: "Druiventak, Anthony; Vriesde, Eljoon; Silva, Emiliano M.; Veiga, Marcello M."
+  authors_apa: "Druiventak, A., Vriesde, E., Silva, E. M., & Veiga, M. M."
+  title_apa: "From byproduct to business: A conceptual micro-enterprise model for artisanal and small-scale gold mining (ASGM) tailings in Suriname"
   journal: "The Extractive Industries and Society"
   year: 2026
   volume: "27"
@@ -20,6 +25,8 @@
 
 - title: "From Agro-Industrial Waste to Gold Lixiviant: Evaluating Cassava Wastewater Applications in Artisanal Mining"
   authors: "Silva, Emiliano M.; Barreto, M. C. S.; Veiga, Marcello M.; De Tomi, Giorgio"
+  authors_apa: "Silva, E. M., Barreto, M. C. S., Veiga, M. M., & De Tomi, G."
+  title_apa: "From agro-industrial waste to gold lixiviant: Evaluating cassava wastewater applications in artisanal mining"
   journal: "Mining"
   year: 2025
   volume: "5"
@@ -30,6 +37,8 @@
 
 - title: "Production of cement-tailings bricks with artisanal gold mining waste"
   authors: "Silva, Emiliano M.; Vriesde, E.; Druiventak, A.; Veiga, Marcello M.; De Tomi, Giorgio"
+  authors_apa: "Silva, E. M., Vriesde, E., Druiventak, A., Veiga, M. M., & De Tomi, G."
+  title_apa: "Production of cement-tailings bricks with artisanal gold mining waste"
   journal: "Cleaner Waste Systems"
   year: 2025
   volume: "11"
@@ -40,9 +49,12 @@
 
 - title: "Four Decades of Efforts to Reduce or Eliminate Mercury Pollution in Artisanal Gold Mining"
   authors: "Veiga, Marcello M.; Anene, N. C.; Silva, Emiliano M."
+  authors_apa: "Veiga, M. M., Anene, N. C., & Silva, E. M."
+  title_apa: "Four decades of efforts to reduce or eliminate mercury pollution in artisanal gold mining"
   journal: "Minerals"
   year: 2025
-  volume: "15(4)"
+  volume: "15"
+  issue: "4"
   pages: "376"
   doi: "10.3390/min15040376"
   url: "https://doi.org/10.3390/min15040376"

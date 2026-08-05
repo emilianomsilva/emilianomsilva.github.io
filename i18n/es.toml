@@ -7,8 +7,35 @@ other = "Educación"
 [professional_experience]
 other = "Experiencia Profesional"
 
+[research_experience]
+other = "Experiencia en Investigación y Colaboración Internacional"
+
+[professional_leadership]
+other = "Experiencia Profesional y de Liderazgo"
+
+[teaching_academic_service]
+other = "Docencia y Servicio Académico"
+
 [competencies]
 other = "Competencias"
+
+[category]
+other = "Categoría"
+
+[competency]
+other = "Competencia"
+
+[experience]
+other = "Experiencia"
+
+[evidence]
+other = "Evidencia"
+
+[language]
+other = "Idioma"
+
+[proficiency]
+other = "Dominio"
 
 [research]
 other = "Investigación"
@@ -21,6 +48,12 @@ other = "Contacto"
 
 [academic_credentials]
 other = "Credenciales Académicas"
+
+[professional_metrics]
+other = "Métricas Profesionales"
+
+[professional_metrics_intro]
+other = "Evidencia seleccionada de investigación, liderazgo técnico y ejecución aplicada."
 
 [explore_research]
 other = "Explorar Líneas de Investigación"
@@ -84,6 +117,9 @@ other = "Alcance Científico y Metodología"
 
 [doi]
 other = "DOI"
+
+[read_article]
+other = "Leer artículo"
 
 [bibtex]
 other = "BibTeX"

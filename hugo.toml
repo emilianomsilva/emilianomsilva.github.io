@@ -12,24 +12,27 @@ theme = []
     languageCode = "en"
     weight = 1
     title = "Emiliano M. Silva's Website"
-    [languages.en.params]
-      bio_short = "Chemist • Civil Engineer • M.Sc. in Geosciences • Ph.D. Candidate in Mining Engineering"
+  [languages.en.params]
+      bio_short = "Chemist • Civil Engineer • M.Sc. in Geosciences • Ph.D. Candidate in Mineral Engineering"
+      bio_full = "Interdisciplinary researcher with 15+ years of experience across chemistry, environmental geosciences, mining and construction engineering, and forensic science. Currently a Ph.D. Candidate in Mineral Engineering at the University of São Paulo, I investigate sustainable approaches to mineral processing, mercury-free gold recovery, and mine-waste valorization. My work combines rigorous field methods, analytical reasoning, data analysis, quality assurance, and technical reporting across complex scientific and applied settings."
 
   [languages.pt]
     languageName = "Português"
     languageCode = "pt"
     weight = 2
     title = "Emiliano M. Silva's Website"
-    [languages.pt.params]
-      bio_short = "Químico • Engenheiro Civil • M.Sc. em Geociências • Doutorando em Engenharia Mineral"
+  [languages.pt.params]
+    bio_short = "Químico • Engenheiro Civil • M.Sc. em Geociências • Doutorando em Engenharia Mineral"
+    bio_full = "Pesquisador interdisciplinar com mais de 15 anos de experiência nas áreas de química, geociências ambientais, engenharia de minas e civil e ciências forenses. Atualmente, sou Doutorando em Engenharia Mineral na Universidade de São Paulo e investigo abordagens sustentáveis para o processamento mineral, a recuperação de ouro sem mercúrio e a valorização de rejeitos de mineração. Meu trabalho combina métodos rigorosos de campo, raciocínio analítico, análise de dados, garantia da qualidade e documentação técnica em contextos científicos e aplicados complexos."
 
   [languages.es]
     languageName = "Español"
     languageCode = "es"
     weight = 3
     title = "Emiliano M. Silva's Website"
-    [languages.es.params]
-      bio_short = "Químico • Ingeniero Civil • M.Sc. en Geociencias • Doctorando en Ingeniería Mineral"
+  [languages.es.params]
+    bio_short = "Químico • Ingeniero Civil • M.Sc. en Geociencias • Doctorando en Ingeniería Mineral"
+    bio_full = "Investigador interdisciplinario con más de 15 años de experiencia en química, geociencias ambientales, ingeniería minera y civil, y ciencias forenses. Actualmente soy Doctorando en Ingeniería Mineral en la Universidad de São Paulo e investigo enfoques sostenibles para el procesamiento de minerales, la recuperación de oro sin mercurio y la valorización de relaves mineros. Mi trabajo combina métodos rigurosos de campo, razonamiento analítico, análisis de datos, aseguramiento de la calidad y documentación técnica en contextos científicos y aplicados complejos."
 
 # Taxonomies
 [taxonomies]

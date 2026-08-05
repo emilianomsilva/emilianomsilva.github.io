@@ -7,8 +7,35 @@ other = "Education"
 [professional_experience]
 other = "Professional Experience"
 
+[research_experience]
+other = "Research Experience and International Collaboration"
+
+[professional_leadership]
+other = "Professional and Leadership Experience"
+
+[teaching_academic_service]
+other = "Teaching and Academic Service"
+
 [competencies]
 other = "Competencies"
+
+[category]
+other = "Category"
+
+[competency]
+other = "Competency"
+
+[experience]
+other = "Experience"
+
+[evidence]
+other = "Evidence"
+
+[language]
+other = "Language"
+
+[proficiency]
+other = "Proficiency"
 
 [research]
 other = "Research"
@@ -21,6 +48,12 @@ other = "Contact"
 
 [academic_credentials]
 other = "Academic Credentials"
+
+[professional_metrics]
+other = "Professional Metrics"
+
+[professional_metrics_intro]
+other = "Selected evidence of research, technical leadership, and applied delivery."
 
 [explore_research]
 other = "Explore Research Lines"
@@ -84,6 +117,9 @@ other = "Scientific Scope & Methodology"
 
 [doi]
 other = "DOI"
+
+[read_article]
+other = "Read article"
 
 [bibtex]
 other = "BibTeX"
