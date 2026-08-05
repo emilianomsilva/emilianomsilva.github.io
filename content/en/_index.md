@@ -1,5 +1,5 @@
 ---
-title: "Emiliano Mendonça Silva — Academic Portfolio"
+title: "Emiliano M. Silva's Page"
 type: "home"
 layout: "index"
 bio_short: "Chemist • Civil Engineer • M.Sc. in Geosciences • Ph.D. Candidate in Mining Engineering"

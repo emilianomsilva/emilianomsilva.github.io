@@ -11,7 +11,7 @@ theme = []
     languageName = "English"
     languageCode = "en"
     weight = 1
-    title = "Emiliano Mendonça Silva — Academic Portfolio"
+    title = "Emiliano M. Silva's Page"
     [languages.en.params]
       bio_short = "Chemist • Civil Engineer • M.Sc. in Geosciences • Ph.D. Candidate in Mining Engineering"
 
