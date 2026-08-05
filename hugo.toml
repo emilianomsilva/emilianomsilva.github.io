@@ -1,5 +1,5 @@
 baseURL = "https://emilianomsilva.github.io/"
-title = "Emiliano Mendonça Silva — Personal Academic Website"
+title = "Emiliano M. Silva's Website"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
@@ -11,7 +11,7 @@ theme = []
     languageName = "English"
     languageCode = "en"
     weight = 1
-    title = "Emiliano M. Silva's Page"
+    title = "Emiliano M. Silva's Website"
     [languages.en.params]
       bio_short = "Chemist • Civil Engineer • M.Sc. in Geosciences • Ph.D. Candidate in Mining Engineering"
 
@@ -19,7 +19,7 @@ theme = []
     languageName = "Português"
     languageCode = "pt"
     weight = 2
-    title = "Emiliano Mendonça Silva — Portal Acadêmico"
+    title = "Emiliano M. Silva's Website"
     [languages.pt.params]
       bio_short = "Químico • Engenheiro Civil • M.Sc. em Geociências • Doutorando em Engenharia Mineral"
 
@@ -27,7 +27,7 @@ theme = []
     languageName = "Español"
     languageCode = "es"
     weight = 3
-    title = "Emiliano Mendonça Silva — Portal Académico"
+    title = "Emiliano M. Silva's Website"
     [languages.es.params]
       bio_short = "Químico • Ingeniero Civil • M.Sc. en Geociencias • Doctorando en Ingeniería Mineral"
 
@@ -58,7 +58,7 @@ theme = []
 
 # Params
 [params]
-  author = "Emiliano Mendonça Silva"
+  author = "Emiliano M. Silva"
   email = "emilianomsilva@gmail.com"
   orcid = "0009-0009-5783-3998"
   github = "https://github.com/emilianomsilva"

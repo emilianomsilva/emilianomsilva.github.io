@@ -66,3 +66,30 @@ other = "¡Gracias! Su mensaje ha sido enviado con éxito."
 
 [form_error]
 other = "Ocurrió un error. Por favor, inténtelo de nuevo."
+
+[back_to_top]
+other = "Volver arriba"
+
+[toggle_sidebar]
+other = "Alternar barra lateral"
+
+[section_label]
+other = "SECCIÓN %s ↑"
+
+[research_axis]
+other = "Línea de Investigación"
+
+[scientific_scope]
+other = "Alcance Científico y Metodología"
+
+[doi]
+other = "DOI"
+
+[bibtex]
+other = "BibTeX"
+
+[present]
+other = "Presente"
+
+[years_short]
+other = "años"

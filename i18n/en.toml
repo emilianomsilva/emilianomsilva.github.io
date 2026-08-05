@@ -66,3 +66,30 @@ other = "Thank you! Your message has been sent successfully."
 
 [form_error]
 other = "An error occurred. Please try again."
+
+[back_to_top]
+other = "Back to top"
+
+[toggle_sidebar]
+other = "Toggle sidebar"
+
+[section_label]
+other = "SECTION %s ↑"
+
+[research_axis]
+other = "Research Axis"
+
+[scientific_scope]
+other = "Scientific Scope & Methodology"
+
+[doi]
+other = "DOI"
+
+[bibtex]
+other = "BibTeX"
+
+[present]
+other = "Present"
+
+[years_short]
+other = "yrs"

@@ -4,9 +4,9 @@
   year: 2026
   volume: "16(8)"
   pages: "784"
-  doi: "10.3390/min1608784"
-  url: "https://doi.org/10.3390/min1608784"
-  bibtex: "@article{silva2026circuit,\n  author = {Silva, Emiliano M. and da Veiga, Marcello M. and De Tomi, Giorgio},\n  title = {System-Wide Evaluation of Gold and Silver Recovery and Mercury Losses in an Artisanal Amalgamation--Cyanidation Circuit: A Diagnostic Approach to Mercury-Free Processing},\n  journal = {Minerals},\n  year = {2026},\n  volume = {16},\n  number = {8},\n  pages = {784},\n  doi = {10.3390/min1608784}\n}"
+  doi: "10.3390/min16080784"
+  url: "https://doi.org/10.3390/min16080784"
+  bibtex: "@article{silva2026circuit,\n  author = {Silva, Emiliano M. and da Veiga, Marcello M. and De Tomi, Giorgio},\n  title = {System-Wide Evaluation of Gold and Silver Recovery and Mercury Losses in an Artisanal Amalgamation--Cyanidation Circuit: A Diagnostic Approach to Mercury-Free Processing},\n  journal = {Minerals},\n  year = {2026},\n  volume = {16},\n  number = {8},\n  pages = {784},\n  doi = {10.3390/min16080784}\n}"
 
 - title: "From Byproduct to Business: A Conceptual Micro-Enterprise Model for Artisanal and Small-Scale Gold Mining (ASGM) Tailings in Suriname"
   authors: "Druiventak, Anthony; Vriesde, Eljoon; Silva, Emiliano M.; Veiga, Marcello M."

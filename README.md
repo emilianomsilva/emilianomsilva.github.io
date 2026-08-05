@@ -1,4 +1,4 @@
-# Emiliano Mendonça Silva — Personal Academic Website
+# Emiliano M. Silva's Website
 
 ![Hugo](https://img.shields.io/badge/Hugo-v0.131.0%2B-FF4088?style=flat-square&logo=hugo&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-SCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
@@ -7,7 +7,7 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Languages](https://img.shields.io/badge/Languages-EN%20%7C%20PT%20%7C%20ES-007ACC?style=flat-square)
 
-Official multilingual personal academic website and research portfolio of **Emiliano Mendonça Silva** (Chemist, Civil Engineer, M.Sc. in Geosciences, Ph.D. Candidate in Mining Engineering).
+Official multilingual academic website and research portfolio of **Emiliano M. Silva** (Chemist, Civil Engineer, M.Sc. in Geosciences, Ph.D. Candidate in Mining Engineering).
 
 ---
 
