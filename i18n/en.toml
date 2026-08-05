@@ -1,0 +1,68 @@
+[biography]
+other = "Biography"
+
+[education]
+other = "Education"
+
+[professional_experience]
+other = "Professional Experience"
+
+[competencies]
+other = "Competencies"
+
+[research]
+other = "Research"
+
+[publications]
+other = "Publications"
+
+[contact]
+other = "Contact"
+
+[academic_credentials]
+other = "Academic Credentials"
+
+[explore_research]
+other = "Explore Research Lines"
+
+[download_cv]
+other = "Download CV (PDF)"
+
+[view_publications]
+other = "Publications"
+
+[current_status]
+other = "Current Status"
+
+[primary_focus]
+other = "Primary Focus"
+
+[languages]
+other = "Languages"
+
+[open_science]
+other = "Open Science"
+
+[form_name]
+other = "Name"
+
+[form_email]
+other = "Email"
+
+[form_subject]
+other = "Subject"
+
+[form_message]
+other = "Message"
+
+[form_send]
+other = "Send Message"
+
+[form_sending]
+other = "Sending..."
+
+[form_success]
+other = "Thank you! Your message has been sent successfully."
+
+[form_error]
+other = "An error occurred. Please try again."

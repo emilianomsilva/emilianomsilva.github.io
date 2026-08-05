@@ -1,0 +1,68 @@
+[biography]
+other = "Biografía"
+
+[education]
+other = "Educación"
+
+[professional_experience]
+other = "Experiencia Profesional"
+
+[competencies]
+other = "Competencias"
+
+[research]
+other = "Investigación"
+
+[publications]
+other = "Publicaciones"
+
+[contact]
+other = "Contacto"
+
+[academic_credentials]
+other = "Credenciales Académicas"
+
+[explore_research]
+other = "Explorar Líneas de Investigación"
+
+[download_cv]
+other = "Descargar CV (PDF)"
+
+[view_publications]
+other = "Publicaciones"
+
+[current_status]
+other = "Estado Actual"
+
+[primary_focus]
+other = "Enfoque Principal"
+
+[languages]
+other = "Idiomas"
+
+[open_science]
+other = "Ciencia Abierta"
+
+[form_name]
+other = "Nombre"
+
+[form_email]
+other = "Correo Electrónico"
+
+[form_subject]
+other = "Asunto"
+
+[form_message]
+other = "Mensaje"
+
+[form_send]
+other = "Enviar Mensaje"
+
+[form_sending]
+other = "Enviando..."
+
+[form_success]
+other = "¡Gracias! Su mensaje ha sido enviado con éxito."
+
+[form_error]
+other = "Ocurrió un error. Por favor, inténtelo de nuevo."

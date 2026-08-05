@@ -1,0 +1,68 @@
+baseURL = "https://emilianomsilva.github.io/"
+title = "Emiliano Mendonça Silva — Personal Academic Website"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+theme = []
+
+# Multilingual configuration
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+    title = "Emiliano Mendonça Silva — Academic Portfolio"
+    [languages.en.params]
+      bio_short = "Chemist • Civil Engineer • M.Sc. in Geosciences • Ph.D. Candidate in Mining Engineering"
+
+  [languages.pt]
+    languageName = "Português"
+    languageCode = "pt"
+    weight = 2
+    title = "Emiliano Mendonça Silva — Portal Acadêmico"
+    [languages.pt.params]
+      bio_short = "Químico • Engenheiro Civil • M.Sc. em Geociências • Doutorando em Engenharia Mineral"
+
+  [languages.es]
+    languageName = "Español"
+    languageCode = "es"
+    weight = 3
+    title = "Emiliano Mendonça Silva — Portal Académico"
+    [languages.es.params]
+      bio_short = "Químico • Ingeniero Civil • M.Sc. en Geociencias • Doctorando en Ingeniería Mineral"
+
+# Taxonomies
+[taxonomies]
+  year = "years"
+  journal = "journals"
+  topic = "topics"
+  country = "countries"
+  project = "projects"
+
+# Markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "github"
+
+# Outputs
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+# Params
+[params]
+  author = "Emiliano Mendonça Silva"
+  email = "emilianomsilva@gmail.com"
+  orcid = "0009-0009-5783-3998"
+  github = "https://github.com/emilianomsilva"
+  scholar = "https://scholar.google.com"
+  linkedin = "https://linkedin.com/in/emilianomsilva"
+  location = "Primavera do Leste, Mato Grosso, Brazil"
+  affiliation = "NAP.Mineração — Research Center for Responsible Mining, USP"

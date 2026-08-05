@@ -1,0 +1,286 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global/global}
+    \entry{silva2026byproduct}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=7499f66dc2ba627216dfb36f19f45b7b}{%
+           family={Druiventak},
+           familyi={D\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=51fbbd67d4f69d301797e01646db4e46}{%
+           family={Vriesde},
+           familyi={V\bibinitperiod},
+           given={Eljoon},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d4f0b7c68065aa8ab7d74d0e38650aa9}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Emiliano\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=24c415772a6cac94777b1e7c63d8aec9}{%
+           family={Veiga},
+           familyi={V\bibinitperiod},
+           given={Marcello\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{677b5f3d5a9a25bc14c5dd77fcd5b8e9}
+      \strng{fullhash}{f01c09999ff3f8fe8836382a162bd9a9}
+      \strng{fullhashraw}{f01c09999ff3f8fe8836382a162bd9a9}
+      \strng{bibnamehash}{677b5f3d5a9a25bc14c5dd77fcd5b8e9}
+      \strng{authorbibnamehash}{677b5f3d5a9a25bc14c5dd77fcd5b8e9}
+      \strng{authornamehash}{677b5f3d5a9a25bc14c5dd77fcd5b8e9}
+      \strng{authorfullhash}{f01c09999ff3f8fe8836382a162bd9a9}
+      \strng{authorfullhashraw}{f01c09999ff3f8fe8836382a162bd9a9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Extractive Industries and Society}
+      \field{title}{From Byproduct to Business: A Conceptual Micro-Enterprise Model for Artisanal and Small-Scale Gold Mining (ASGM) Tailings in Suriname}
+      \field{volume}{27}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{101931}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.exis.2026.101931
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.exis.2026.101931
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.exis.2026.101931
+      \endverb
+    \endentry
+    \entry{silva2026circuit}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d4f0b7c68065aa8ab7d74d0e38650aa9}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Emiliano\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a3acbb9bad612a936baf12e576007881}{%
+           family={Veiga},
+           familyi={V\bibinitperiod},
+           given={Marcello\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={da},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=20317347155a9a77ce221b57c069c2a3}{%
+           family={De\bibnamedelima Tomi},
+           familyi={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbe2a49dfc2b69884867b23ee7f58695}
+      \strng{fullhash}{cbe2a49dfc2b69884867b23ee7f58695}
+      \strng{fullhashraw}{cbe2a49dfc2b69884867b23ee7f58695}
+      \strng{bibnamehash}{cbe2a49dfc2b69884867b23ee7f58695}
+      \strng{authorbibnamehash}{cbe2a49dfc2b69884867b23ee7f58695}
+      \strng{authornamehash}{cbe2a49dfc2b69884867b23ee7f58695}
+      \strng{authorfullhash}{cbe2a49dfc2b69884867b23ee7f58695}
+      \strng{authorfullhashraw}{cbe2a49dfc2b69884867b23ee7f58695}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Minerals}
+      \field{number}{8}
+      \field{title}{System-Wide Evaluation of Gold and Silver Recovery and Mercury Losses in an Artisanal Amalgamation--Cyanidation Circuit: A Diagnostic Approach to Mercury-Free Processing}
+      \field{volume}{16}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{784}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/min16080784
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3390/min16080784
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3390/min16080784
+      \endverb
+    \endentry
+    \entry{silva2025cassava}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=d4f0b7c68065aa8ab7d74d0e38650aa9}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Emiliano\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9548b0985704320e4650a5946f3259e8}{%
+           family={Barreto},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi C.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=24c415772a6cac94777b1e7c63d8aec9}{%
+           family={Veiga},
+           familyi={V\bibinitperiod},
+           given={Marcello\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=20317347155a9a77ce221b57c069c2a3}{%
+           family={De\bibnamedelima Tomi},
+           familyi={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a6e6b28f2d057667d87d864670e89ed}
+      \strng{fullhash}{655cedd68b5f3dbf9040dea54f8d9da2}
+      \strng{fullhashraw}{655cedd68b5f3dbf9040dea54f8d9da2}
+      \strng{bibnamehash}{8a6e6b28f2d057667d87d864670e89ed}
+      \strng{authorbibnamehash}{8a6e6b28f2d057667d87d864670e89ed}
+      \strng{authornamehash}{8a6e6b28f2d057667d87d864670e89ed}
+      \strng{authorfullhash}{655cedd68b5f3dbf9040dea54f8d9da2}
+      \strng{authorfullhashraw}{655cedd68b5f3dbf9040dea54f8d9da2}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mining}
+      \field{title}{From Agro-Industrial Waste to Gold Lixiviant: Evaluating Cassava Wastewater Applications in Artisanal Mining}
+      \field{volume}{5}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{64}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/mining5040064
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3390/mining5040064
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3390/mining5040064
+      \endverb
+    \endentry
+    \entry{silva2025bricks}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=d4f0b7c68065aa8ab7d74d0e38650aa9}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Emiliano\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7ea314606cf5b51e1a487601ad909d7d}{%
+           family={Vriesde},
+           familyi={V\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d433780c6d36a73d9a8b57ec51965e02}{%
+           family={Druiventak},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=24c415772a6cac94777b1e7c63d8aec9}{%
+           family={Veiga},
+           familyi={V\bibinitperiod},
+           given={Marcello\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=20317347155a9a77ce221b57c069c2a3}{%
+           family={De\bibnamedelima Tomi},
+           familyi={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a6e6b28f2d057667d87d864670e89ed}
+      \strng{fullhash}{6711402524e304a3dd5ad147c2c2fa0d}
+      \strng{fullhashraw}{6711402524e304a3dd5ad147c2c2fa0d}
+      \strng{bibnamehash}{8a6e6b28f2d057667d87d864670e89ed}
+      \strng{authorbibnamehash}{8a6e6b28f2d057667d87d864670e89ed}
+      \strng{authornamehash}{8a6e6b28f2d057667d87d864670e89ed}
+      \strng{authorfullhash}{6711402524e304a3dd5ad147c2c2fa0d}
+      \strng{authorfullhashraw}{6711402524e304a3dd5ad147c2c2fa0d}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cleaner Waste Systems}
+      \field{title}{Production of cement-tailings bricks with artisanal gold mining waste}
+      \field{volume}{11}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{100269}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.clwas.2025.100269
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.clwas.2025.100269
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.clwas.2025.100269
+      \endverb
+    \endentry
+    \entry{veiga2025mercury}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=24c415772a6cac94777b1e7c63d8aec9}{%
+           family={Veiga},
+           familyi={V\bibinitperiod},
+           given={Marcello\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=53a0bebe64a84050c929a09d7616bbfa}{%
+           family={Anene},
+           familyi={A\bibinitperiod},
+           given={N.\bibnamedelimi C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d4f0b7c68065aa8ab7d74d0e38650aa9}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Emiliano\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f304c31e6982562c494f6e21c6f3e208}
+      \strng{fullhash}{f304c31e6982562c494f6e21c6f3e208}
+      \strng{fullhashraw}{f304c31e6982562c494f6e21c6f3e208}
+      \strng{bibnamehash}{f304c31e6982562c494f6e21c6f3e208}
+      \strng{authorbibnamehash}{f304c31e6982562c494f6e21c6f3e208}
+      \strng{authornamehash}{f304c31e6982562c494f6e21c6f3e208}
+      \strng{authorfullhash}{f304c31e6982562c494f6e21c6f3e208}
+      \strng{authorfullhashraw}{f304c31e6982562c494f6e21c6f3e208}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Minerals}
+      \field{number}{4}
+      \field{title}{Four Decades of Efforts to Reduce or Eliminate Mercury Pollution in Artisanal Gold Mining}
+      \field{volume}{15}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{376}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/min15040376
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3390/min15040376
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3390/min15040376
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

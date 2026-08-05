@@ -1,0 +1,55 @@
+<aside class="sidebar-black collapsed" id="sidebar">
+  <div>
+    <div class="sidebar-header">
+      <button class="toggle-btn" onclick="toggleSidebar()" title="Toggle Sidebar">
+        <svg class="svg-icon" style="stroke:#FFF;" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 3v18"/><path d="m14 9-3 3 3 3"/></svg>
+      </button>
+    </div>
+
+    <nav class="sidebar-menu">
+      <a class="menu-item active" onclick="scrollToSection('about', this)">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span class="menu-label">{{ i18n "biography" }}</span>
+      </a>
+
+      <a class="menu-item" onclick="scrollToSection('education', this)">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        <span class="menu-label">{{ i18n "education" }}</span>
+      </a>
+
+      <a class="menu-item" onclick="scrollToSection('experience', this)">
+        <svg class="svg-icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        <span class="menu-label">{{ i18n "professional_experience" }}</span>
+      </a>
+
+      <a class="menu-item" onclick="scrollToSection('competencies', this)">
+        <svg class="svg-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span class="menu-label">{{ i18n "competencies" }}</span>
+      </a>
+
+      <a class="menu-item" onclick="scrollToSection('research', this)">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M10 2v7.31L4.75 18.1A2 2 0 0 0 6.47 21h11.06a2 2 0 0 0 1.72-2.9L14 9.31V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg>
+        <span class="menu-label">{{ i18n "research" }}</span>
+      </a>
+
+      <a class="menu-item" onclick="scrollToSection('publications', this)">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+        <span class="menu-label">{{ i18n "publications" }}</span>
+      </a>
+
+      <a class="menu-item" onclick="scrollToSection('contact', this)">
+        <svg class="svg-icon" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <span class="menu-label">{{ i18n "contact" }}</span>
+      </a>
+    </nav>
+  </div>
+
+  <div class="sidebar-footer">
+    <div class="lang-switcher-dark">
+      {{ $currentLang := .Language.Lang }}
+      {{ range site.Languages }}
+        <a href="/{{ .Lang }}/" class="lang-opt {{ if eq .Lang $currentLang }}active{{ end }}">{{ upper .Lang }}</a>
+      {{ end }}
+    </div>
+  </div>
+</aside>

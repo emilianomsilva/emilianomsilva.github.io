@@ -1,0 +1,272 @@
+{{ define "main" }}
+
+<!-- SECTION 1: BIOGRAPHY -->
+<section class="page-section" id="about">
+  <div class="hero-academic-grid">
+    <div>
+      <h1 class="academic-title">{{ .Site.Params.author }}</h1>
+      <div class="academic-sub">
+        {{ .Params.bio_short | default .Site.Params.bio_short }}
+      </div>
+      <p class="academic-bio">
+        {{ .Params.bio_full }}
+      </p>
+    </div>
+
+    <div class="institutional-box">
+      <h3>{{ i18n "academic_credentials" }}</h3>
+      <ul class="info-list">
+        <li>
+          <span class="lbl">{{ i18n "current_status" }}</span>
+          <span class="val">{{ site.Data.profile.status }}</span>
+        </li>
+        <li>
+          <span class="lbl">{{ i18n "primary_focus" }}</span>
+          <span class="val">{{ site.Data.profile.primary_focus }}</span>
+        </li>
+        <li>
+          <span class="lbl">{{ i18n "languages" }}</span>
+          <span class="val">{{ delimit site.Data.profile.languages ", " }}</span>
+        </li>
+        <li>
+          <span class="lbl">{{ i18n "open_science" }}</span>
+          <span class="val">{{ site.Data.profile.open_science }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: EDUCATION -->
+<section class="page-section" id="education">
+  <div class="section-head">
+    <h2>{{ i18n "education" }}</h2>
+    <a onclick="scrollToSection('about')" class="section-num-btn" title="Back to top">SECTION 02 ↑</a>
+  </div>
+
+  {{ $lang := .Language.Lang }}
+  {{ range site.Data.education }}
+  <div class="pub-card" style="margin-bottom: 1.25rem;">
+    <div class="pub-card-header">
+      <div class="pub-card-title" style="font-size: 1.1rem; color: var(--text-main);">
+        {{ if eq $lang "pt" }}{{ .degree_pt }}{{ else if eq $lang "es" }}{{ .degree_es }}{{ else }}{{ .degree_en }}{{ end }}
+      </div>
+      <span class="tag-pill" style="font-weight: 700;">{{ .period }}</span>
+    </div>
+    <div class="pub-card-meta" style="font-weight: 600; color: var(--text-muted); margin-top: 0.2rem;">
+      {{ .institution }}
+    </div>
+    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; text-text-align: justify;">
+      {{ if eq $lang "pt" }}{{ .details_pt }}{{ else if eq $lang "es" }}{{ .details_es }}{{ else }}{{ .details_en }}{{ end }}
+    </p>
+  </div>
+  {{ end }}
+</section>
+
+<!-- SECTION 3: PROFESSIONAL EXPERIENCE -->
+<section class="page-section" id="experience">
+  <div class="section-head">
+    <h2>{{ i18n "professional_experience" }}</h2>
+    <a onclick="scrollToSection('about')" class="section-num-btn" title="Back to top">SECTION 03 ↑</a>
+  </div>
+
+  {{ $lang := .Language.Lang }}
+  {{ range site.Data.experience }}
+  <div class="pub-card" style="margin-bottom: 1.25rem;">
+    <div class="pub-card-header">
+      <div class="pub-card-title" style="font-size: 1.05rem; color: var(--text-main);">
+        {{ if eq $lang "pt" }}{{ .role_pt }}{{ else if eq $lang "es" }}{{ .role_es }}{{ else }}{{ .role_en }}{{ end }}
+      </div>
+      <span class="tag-pill">{{ .period }}</span>
+    </div>
+    <div class="pub-card-meta" style="font-weight: 600; color: var(--text-muted); margin-top: 0.2rem;">
+      {{ .organization }}
+    </div>
+    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
+      {{ if eq $lang "pt" }}{{ .details_pt }}{{ else if eq $lang "es" }}{{ .details_es }}{{ else }}{{ .details_en }}{{ end }}
+    </p>
+  </div>
+  {{ end }}
+</section>
+
+<!-- SECTION 4: COMPETENCIES -->
+<section class="page-section" id="competencies">
+  <div class="section-head">
+    <h2>{{ i18n "competencies" }}</h2>
+    <a onclick="scrollToSection('about')" class="section-num-btn" title="Back to top">SECTION 04 ↑</a>
+  </div>
+
+  {{ $lang := .Language.Lang }}
+  <div class="competencies-grid">
+    <div>
+      {{ range site.Data.skills.competencies }}
+      <div style="margin-bottom: 1.75rem;">
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.85rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.35rem; text-transform: uppercase;">
+          {{ if eq $lang "pt" }}{{ .category_pt }}{{ else if eq $lang "es" }}{{ .category_es }}{{ else }}{{ .category_en }}{{ end }}
+        </h3>
+        {{ range .items }}
+        <div style="margin-bottom: 0.75rem; background: var(--bg-section-alt); padding: 0.85rem; border: 1px solid var(--border-color); border-radius: 4px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <strong style="color: var(--text-main); font-size: 0.92rem;">
+              {{ if eq $lang "pt" }}{{ .name_pt }}{{ else if eq $lang "es" }}{{ .name_es }}{{ else }}{{ .name_en }}{{ end }}
+            </strong>
+            <span class="tag-pill" style="font-weight: 700;">{{ .years }}</span>
+          </div>
+          <p style="font-size: 0.84rem; color: var(--text-muted); margin-top: 0.3rem;">
+            {{ if eq $lang "pt" }}{{ .details_pt }}{{ else if eq $lang "es" }}{{ .details_es }}{{ else }}{{ .details_en }}{{ end }}
+          </p>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div>
+      <h3 style="font-size: 0.95rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.85rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.35rem; text-transform: uppercase;">
+        {{ i18n "languages" }}
+      </h3>
+      {{ range site.Data.skills.languages }}
+      <div style="margin-bottom: 0.85rem; background: #FFF; padding: 0.85rem; border: 1px solid var(--border-color); border-radius: 4px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <strong style="color: var(--text-main); font-size: 0.95rem;">
+            {{ if eq $lang "pt" }}{{ .name_pt }}{{ else if eq $lang "es" }}{{ .name_es }}{{ else }}{{ .name_en }}{{ end }}
+          </strong>
+          <span class="tag-pill" style="font-weight: 600;">
+            {{ if eq $lang "pt" }}{{ .proficiency_pt }}{{ else if eq $lang "es" }}{{ .proficiency_es }}{{ else }}{{ .proficiency_en }}{{ end }}
+          </span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: RESEARCH -->
+<section class="page-section" id="research">
+  <div class="section-head">
+    <h2>{{ i18n "research" }}</h2>
+    <a onclick="scrollToSection('about')" class="section-num-btn" title="Back to top">SECTION 05 ↑</a>
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th style="width:35%;">Research Axis</th>
+        <th>Scientific Scope & Methodology</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ $lang := .Language.Lang }}
+      {{ range site.Data.research }}
+      <tr>
+        <td class="primary-col">
+          {{ if eq $lang "pt" }}{{ .title_pt }}{{ else if eq $lang "es" }}{{ .title_es }}{{ else }}{{ .title_en }}{{ end }}
+        </td>
+        <td>
+          {{ if eq $lang "pt" }}{{ .desc_pt }}{{ else if eq $lang "es" }}{{ .desc_es }}{{ else }}{{ .desc_en }}{{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</section>
+
+<!-- SECTION 6: PUBLICATIONS -->
+<section class="page-section" id="publications">
+  <div class="section-head">
+    <h2>{{ i18n "publications" }}</h2>
+    <a onclick="scrollToSection('about')" class="section-num-btn" title="Back to top">SECTION 06 ↑</a>
+  </div>
+
+  {{ range site.Data.publications }}
+  <div class="pub-card">
+    <div class="pub-card-title">{{ .title }}</div>
+    <div class="pub-card-meta">{{ .authors }} — <strong>{{ .journal }}</strong> ({{ .year }})</div>
+    <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+      <a href="{{ .url }}" target="_blank" class="btn-black" style="font-size:0.75rem;">DOI: {{ .doi }}</a>
+      <button class="btn-gray" style="font-size:0.75rem;" onclick="alert('{{ .bibtex }}')">BibTeX</button>
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<!-- SECTION 7: CONTACT (DIRECT GOOGLE FORMS INTEGRATION) -->
+<section class="page-section" id="contact">
+  <div class="section-head">
+    <h2>{{ i18n "contact" }}</h2>
+    <a onclick="scrollToSection('about')" class="section-num-btn" title="Back to top">SECTION 07 ↑</a>
+  </div>
+
+  <form id="gform-contact" onsubmit="handleGoogleFormSubmit(event)" class="contact-form">
+    <div class="form-group-row">
+      <div class="form-group">
+        <label for="contact-name">{{ i18n "form_name" }}</label>
+        <input type="text" id="contact-name" name="name" required placeholder="{{ i18n "form_name" }}">
+      </div>
+      <div class="form-group">
+        <label for="contact-email">{{ i18n "form_email" }}</label>
+        <input type="email" id="contact-email" name="email" required placeholder="{{ i18n "form_email" }}">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-subject">{{ i18n "form_subject" }}</label>
+      <input type="text" id="contact-subject" name="subject" required placeholder="{{ i18n "form_subject" }}">
+    </div>
+
+    <div class="form-group">
+      <label for="contact-message">{{ i18n "form_message" }}</label>
+      <textarea id="contact-message" name="message" rows="5" required placeholder="{{ i18n "form_message" }}"></textarea>
+    </div>
+
+    <div id="form-status" style="display: none; margin-bottom: 1rem; padding: 0.75rem; border-radius: 4px; font-size: 0.88rem; font-weight: 500;"></div>
+
+    <button type="submit" id="btn-submit-gform" class="btn-black" style="padding: 0.65rem 1.6rem; font-size: 0.88rem;">{{ i18n "form_send" }}</button>
+  </form>
+
+  <script>
+    function handleGoogleFormSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const btn = document.getElementById('btn-submit-gform');
+      const statusBox = document.getElementById('form-status');
+      
+      btn.disabled = true;
+      btn.innerText = '{{ i18n "form_sending" }}';
+      statusBox.style.display = 'none';
+
+      const formData = new FormData();
+      formData.append('entry.338736855', form.name.value);
+      formData.append('entry.1543464077', form.email.value);
+      formData.append('entry.1804263728', form.subject.value);
+      formData.append('entry.1440739142', form.message.value);
+
+      fetch('https://docs.google.com/forms/d/e/1FAIpQLSfrD9IMgJlDANexzuLtkE6_hBCh3ln2WcvYJdZKBkyN8ShoRQ/formResponse', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      })
+      .then(() => {
+        form.reset();
+        btn.disabled = false;
+        btn.innerText = '{{ i18n "form_send" }}';
+        statusBox.style.display = 'block';
+        statusBox.style.background = '#F3F4F6';
+        statusBox.style.border = '1px solid #111827';
+        statusBox.style.color = '#111827';
+        statusBox.innerText = '{{ i18n "form_success" }}';
+      })
+      .catch(() => {
+        btn.disabled = false;
+        btn.innerText = '{{ i18n "form_send" }}';
+        statusBox.style.display = 'block';
+        statusBox.style.background = '#FEF2F2';
+        statusBox.style.border = '1px solid #EF4444';
+        statusBox.style.color = '#991B1B';
+        statusBox.innerText = '{{ i18n "form_error" }}';
+      });
+    }
+  </script>
+</section>
+
+{{ end }}

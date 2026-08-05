@@ -1,0 +1,6 @@
+/static/cv/latex/
+/static/qrcode/
+public/
+resources/_gen/
+.hugo_build.lock
+AGENTS.md
