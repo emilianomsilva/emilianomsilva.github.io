@@ -1,7 +1,7 @@
 :root {
   --bg-canvas: #FFFFFF;
   --bg-section-alt: #F9FAFB;
-  --bg-sidebar: #2B2B2B;
+  --bg-sidebar: #0B0909;
   --bg-sidebar-hover: rgba(255, 255, 255, 0.08);
   --text-sidebar-main: #F9FAFB;
   --text-sidebar-muted: #9CA3AF;
@@ -12,14 +12,14 @@
   --text-main: #262626;
   --text-muted: #4B5563;
   --text-light: #6B7280;
-  --btn-black: #2B2B2B;
-  --btn-black-hover: #3A3A3A;
+  --btn-black: #0B0909;
+  --btn-black-hover: #211D1D;
   --btn-gray: #F3F4F6;
   --btn-gray-hover: #E5E7EB;
   --font-serif: 'Newsreader', Georgia, serif;
   --font-sans: 'Inter', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
-  --sidebar-width: 270px;
+  --sidebar-width: fit-content;
   --sidebar-collapsed-width: 72px;
 }
 
@@ -90,6 +90,12 @@ aside.sidebar-black {
       justify-content: center;
     }
 
+    .menu-item {
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     .toggle-btn svg {
       transform: scaleX(-1);
     }
@@ -128,6 +134,7 @@ aside.sidebar-black {
   padding: 0.5rem;
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .menu-item {
@@ -144,6 +151,7 @@ aside.sidebar-black {
   transition: all 0.15s;
   white-space: nowrap;
   margin-bottom: 0.15rem;
+  width: 100%;
 
   &:hover {
     background-color: var(--bg-sidebar-hover);
@@ -511,6 +519,7 @@ section.page-section {
   border: 1px solid var(--border-color);
   border-top: 2px solid var(--btn-black);
   padding: 1rem;
+  text-align: center;
 }
 
 .impact-value {

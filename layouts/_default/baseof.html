@@ -19,15 +19,21 @@
       sb.classList.toggle('collapsed');
     }
 
-    function scrollToSection(sectionId, menuEl) {
+    function setActiveSection(sectionId) {
+      const activeItem = document.querySelector(`.menu-item[data-section="${sectionId}"]`);
+      if (!activeItem) return;
+
+      menuItems.forEach(item => item.classList.toggle('active', item === activeItem));
+      const label = activeItem.querySelector('.menu-label');
+      if (label && breadcrumbLabel) {
+        breadcrumbLabel.innerText = label.innerText.toUpperCase();
+      }
+    }
+
+    function scrollToSection(sectionId) {
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
-      }
-
-      if (menuEl) {
-        document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
-        menuEl.classList.add('active');
       }
     }
 
@@ -36,31 +42,40 @@
     const sections = document.querySelectorAll('.page-section');
     const menuItems = document.querySelectorAll('.menu-item');
     const breadcrumbLabel = document.getElementById('current-section-name');
+    let lastActiveSectionId = '';
+    let scrollFrame = null;
+
+    function updateActiveSection() {
+      scrollFrame = null;
+      let currentSectionId = '';
+      let closestDistance = Infinity;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - scrollArea.offsetTop;
+        const distance = scrollArea.scrollTop + 100 - sectionTop;
+        if (distance >= 0 && distance < closestDistance) {
+          closestDistance = distance;
+          currentSectionId = section.id;
+        }
+      });
+
+      if (!currentSectionId && sections.length) {
+        currentSectionId = sections[0].id;
+      }
+
+      if (currentSectionId && currentSectionId !== lastActiveSectionId) {
+        lastActiveSectionId = currentSectionId;
+        setActiveSection(currentSectionId);
+      }
+    }
 
     if (scrollArea && sections.length > 0) {
       scrollArea.addEventListener('scroll', () => {
-        let currentSectionId = '';
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop - scrollArea.offsetTop - 100;
-          if (scrollArea.scrollTop >= sectionTop) {
-            currentSectionId = section.getAttribute('id');
-          }
-        });
-
-        if (currentSectionId) {
-          menuItems.forEach(item => {
-            item.classList.remove('active');
-            const onclickAttr = item.getAttribute('onclick');
-            if (onclickAttr && onclickAttr.includes(currentSectionId)) {
-              item.classList.add('active');
-              const label = item.querySelector('.menu-label');
-              if (label && breadcrumbLabel) {
-                breadcrumbLabel.innerText = label.innerText.toUpperCase();
-              }
-            }
-          });
+        if (!scrollFrame) {
+          scrollFrame = requestAnimationFrame(updateActiveSection);
         }
       });
+      updateActiveSection();
     }
   </script>
 </body>

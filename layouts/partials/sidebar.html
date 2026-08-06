@@ -7,47 +7,47 @@
     </div>
 
     <nav class="sidebar-menu">
-      <a class="menu-item active" onclick="scrollToSection('about', this)">
+      <a class="menu-item active" data-section="about" onclick="scrollToSection('about')">
         <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         <span class="menu-label">{{ i18n "biography" }}</span>
       </a>
 
-      <a class="menu-item" onclick="scrollToSection('education', this)">
+      <a class="menu-item" data-section="education" onclick="scrollToSection('education')">
         <svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
         <span class="menu-label">{{ i18n "education" }}</span>
       </a>
 
-      <a class="menu-item" onclick="scrollToSection('research-experience', this)">
+      <a class="menu-item" data-section="research-experience" onclick="scrollToSection('research-experience')">
         <svg class="svg-icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         <span class="menu-label">{{ i18n "research_experience" }}</span>
       </a>
 
-      <a class="menu-item" onclick="scrollToSection('professional-leadership', this)">
-        <svg class="svg-icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      <a class="menu-item" data-section="professional-leadership" onclick="scrollToSection('professional-leadership')">
+        <svg class="svg-icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1"/><circle cx="17" cy="9" r="2"/><path d="M17 14a4 4 0 0 1 4 4v1"/></svg>
         <span class="menu-label">{{ i18n "professional_leadership" }}</span>
       </a>
 
-      <a class="menu-item" onclick="scrollToSection('teaching-academic-service', this)">
-        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      <a class="menu-item" data-section="teaching-academic-service" onclick="scrollToSection('teaching-academic-service')">
+        <svg class="svg-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 20h10M12 16v4M7 8h10M7 12h6"/></svg>
         <span class="menu-label">{{ i18n "teaching_academic_service" }}</span>
       </a>
 
-      <a class="menu-item" onclick="scrollToSection('competencies', this)">
+      <a class="menu-item" data-section="competencies" onclick="scrollToSection('competencies')">
         <svg class="svg-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <span class="menu-label">{{ i18n "competencies" }}</span>
       </a>
 
-      <a class="menu-item" onclick="scrollToSection('research', this)">
+      <a class="menu-item" data-section="research" onclick="scrollToSection('research')">
         <svg class="svg-icon" viewBox="0 0 24 24"><path d="M10 2v7.31L4.75 18.1A2 2 0 0 0 6.47 21h11.06a2 2 0 0 0 1.72-2.9L14 9.31V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg>
         <span class="menu-label">{{ i18n "research" }}</span>
       </a>
 
-      <a class="menu-item" onclick="scrollToSection('publications', this)">
+      <a class="menu-item" data-section="publications" onclick="scrollToSection('publications')">
         <svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
         <span class="menu-label">{{ i18n "publications" }}</span>
       </a>
 
-      <a class="menu-item" onclick="scrollToSection('contact', this)">
+      <a class="menu-item" data-section="contact" onclick="scrollToSection('contact')">
         <svg class="svg-icon" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
         <span class="menu-label">{{ i18n "contact" }}</span>
       </a>

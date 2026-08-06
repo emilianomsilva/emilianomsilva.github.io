@@ -8,10 +8,10 @@ other = "Formação Acadêmica"
 other = "Experiência Profissional"
 
 [research_experience]
-other = "Experiência em Pesquisa e Colaboração Internacional"
+other = "Pesquisa e Colaboração"
 
 [professional_leadership]
-other = "Experiência Profissional e Liderança"
+other = "Atuação Técnica e Liderança"
 
 [teaching_academic_service]
 other = "Ensino e Serviço Acadêmico"
@@ -38,7 +38,7 @@ other = "Idioma"
 other = "Proficiência"
 
 [research]
-other = "Linhas de Pesquisa"
+other = "Pesquisa Central"
 
 [publications]
 other = "Publicações"
@@ -53,7 +53,7 @@ other = "Credenciais Acadêmicas"
 other = "Métricas Profissionais"
 
 [professional_metrics_intro]
-other = "Evidências selecionadas de pesquisa, liderança técnica e realização aplicada."
+other = "Indicadores selecionados das minhas atividades de pesquisa e técnicas."
 
 [explore_research]
 other = "Explorar Linhas de Pesquisa"

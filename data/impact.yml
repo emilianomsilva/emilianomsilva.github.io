@@ -18,9 +18,9 @@
   label_en: "Peer-reviewed articles"
   label_pt: "Artigos revisados por pares"
   label_es: "Artículos revisados por pares"
-  context_en: "Published from 2023 to 2026"
-  context_pt: "Publicados de 2023 a 2026"
-  context_es: "Publicados de 2023 a 2026"
+  context_en: "Published since 2023"
+  context_pt: "Publicados desde 2023"
+  context_es: "Publicados desde 2023"
 
 - value: "4"
   label_en: "Research countries"

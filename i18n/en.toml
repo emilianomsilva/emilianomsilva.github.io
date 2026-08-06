@@ -8,10 +8,10 @@ other = "Education"
 other = "Professional Experience"
 
 [research_experience]
-other = "Research Experience and International Collaboration"
+other = "Research and Collaboration"
 
 [professional_leadership]
-other = "Professional and Leadership Experience"
+other = "Technical and Leadership Roles"
 
 [teaching_academic_service]
 other = "Teaching and Academic Service"
@@ -38,7 +38,7 @@ other = "Language"
 other = "Proficiency"
 
 [research]
-other = "Research"
+other = "Core Research"
 
 [publications]
 other = "Publications"
@@ -53,7 +53,7 @@ other = "Academic Credentials"
 other = "Professional Metrics"
 
 [professional_metrics_intro]
-other = "Selected evidence of research, technical leadership, and applied delivery."
+other = "Selected indicators of my research and technical activities."
 
 [explore_research]
 other = "Explore Research Lines"
