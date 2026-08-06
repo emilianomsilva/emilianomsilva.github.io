@@ -1,6 +1,5 @@
-/static/cv/latex/
-/static/qrcode/
+AGENTS.md
 public/
 resources/_gen/
 .hugo_build.lock
-AGENTS.md
+.codegraph/

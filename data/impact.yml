@@ -23,9 +23,9 @@
   context_es: "Publicados desde 2023"
 
 - value: "4"
-  label_en: "Research countries"
-  label_pt: "Países de pesquisa"
-  label_es: "Países de investigación"
+  label_en: "International collaborations"
+  label_pt: "Colaborações internacionais"
+  label_es: "Colaboraciones internacionales"
   context_en: "Brazil, Colombia, Suriname, and Canada"
   context_pt: "Brasil, Colômbia, Suriname e Canadá"
   context_es: "Brasil, Colombia, Surinam y Canadá"
