@@ -129,3 +129,84 @@ other = "Presente"
 
 [years_short]
 other = "años"
+
+[portfolio]
+other = "Portafolio"
+
+[real_estate_properties]
+other = "Inmuebles disponibles"
+
+[real_estate_brand_title]
+other = "Vive en una <span class=\"highlight\">Casa Bien Hecha</span> 🏡"
+
+[real_estate_about_heading]
+other = "Quiénes somos"
+
+[real_estate_about]
+other = "Construimos inmuebles destinados a la venta y al alquiler en Primavera do Leste, Mato Grosso. Ofrecemos contratos facilitados, proporcionando tranquilidad y agilidad en el proceso de alquiler. No somos una inmobiliaria y no anunciamos inmuebles de terceros. Los inmuebles anunciados en este sitio son gestionados por sus respectivos propietarios."
+
+[real_estate_properties_heading]
+other = "Nuestros inmuebles"
+
+[view_property]
+other = "Ver inmueble"
+
+[contact_heading]
+other = "Contacto"
+
+[real_estate_intro]
+other = "Portafolio Inmobiliario"
+
+[view_properties]
+other = "Ver Inmuebles"
+
+[contact_owner]
+other = "Hablar con el Propietario"
+
+[contact_owner_intro]
+other = "¿Interesado? Contacte vía WhatsApp."
+
+[back_to_main]
+other = "Volver al sitio principal"
+
+[unit_available]
+other = "Unidad disponible ✅"
+
+[unit_unavailable]
+other = "Ninguna unidad disponible ⚠️"
+
+[property_features_heading]
+other = "Características del inmueble"
+
+[rent_price_label]
+other = "Valor del alquiler:"
+
+[bonus_label]
+other = "BONUS:"
+
+[meet_the_property_heading]
+other = "Conozca el inmueble"
+
+[property_location_heading]
+other = "Ubicación del inmueble"
+
+[contact_whatsapp_text]
+other = "Póngase en contacto por WhatsApp al número:"
+
+[contact_owner_label]
+other = "Hablar con Emiliano (Propietario)"
+
+[bedrooms]
+other = "dormitorios"
+
+[bathrooms]
+other = "baños"
+
+[tenant_form_button]
+other = "Llenar Formulario de Interés de Alquiler 📝"
+
+[tenant_form_heading]
+other = "Registro de Interés para Alquiler"
+
+[tenant_form_intro]
+other = "Complete sus datos para recibir atención prioritaria en la evaluación de su solicitud."

@@ -1,7 +1,7 @@
 :root {
   --bg-canvas: #FFFFFF;
   --bg-section-alt: #F9FAFB;
-  --bg-sidebar: #263746;
+  --bg-sidebar: #1F3850;
   --bg-sidebar-hover: rgba(255, 255, 255, 0.08);
   --text-sidebar-main: #F9FAFB;
   --text-sidebar-muted: #9CA3AF;
@@ -12,8 +12,8 @@
   --text-main: #262626;
   --text-muted: #4B5563;
   --text-light: #6B7280;
-  --btn-black: #263746;
-  --btn-black-hover: #211D1D;
+  --btn-black: #1F3850;
+  --btn-black-hover: #1F3850;
   --btn-gray: #F3F4F6;
   --btn-gray-hover: #E5E7EB;
   --font-serif: 'Newsreader', Georgia, serif;
@@ -826,4 +826,546 @@ footer.site-footer {
     grid-template-columns: 1fr;
   }
 
+}
+
+/* Google Sites-inspired real-estate page */
+.re-site-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.re-intro {
+  padding: 2.8rem 0 2.25rem;
+  text-align: center;
+}
+
+.re-intro h1 {
+  color: #00305F;
+  font-family: var(--font-sans);
+  font-size: clamp(1.65rem, 3vw, 2.15rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.re-google-section {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 1.5rem 0 2.75rem;
+  text-align: center;
+}
+
+.re-google-section h2 {
+  color: #00305F;
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0 0 1.25rem;
+}
+
+.re-copy {
+  color: #5F6368;
+  font-size: 0.96rem;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 690px;
+}
+
+.re-copy p,
+.re-property-description,
+.re-contact p {
+  margin: 0;
+}
+
+.re-property {
+  margin: 0 auto 3.5rem;
+  max-width: 620px;
+}
+
+.re-property-image {
+  background: #E1DFDB;
+  height: 260px;
+  margin: 0 auto 1.25rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.re-property-image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.re-property-title,
+.re-property-status {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+}
+
+.re-property-title {
+  font-size: 1.15rem;
+}
+
+.re-property-title a,
+.re-property-link,
+.re-contact a {
+  color: #00305F;
+}
+
+.re-property-title a {
+  text-decoration: none;
+}
+
+.re-property-title a:hover,
+.re-property-link:hover,
+.re-contact a:hover {
+  text-decoration: underline;
+}
+
+.re-property-status {
+  font-size: 0.95rem;
+}
+
+.re-available,
+.re-unavailable {
+  background: transparent;
+}
+
+/* Requested Casa Bem Feita palette. */
+.re-google-section {
+  background: #E1DFDB;
+  color: #00305F;
+  padding: 2rem 1.5rem 2.75rem;
+}
+
+.re-google-section h2 {
+  color: #00305F;
+}
+
+.re-copy,
+.re-property,
+.re-contact p {
+  background: #FFFFFF;
+}
+
+.re-copy {
+  color: #5C5C5C;
+  padding: 1.25rem 1.5rem;
+}
+
+.re-property {
+  padding: 1.25rem;
+}
+
+.re-property-title a {
+  color: #06417C;
+}
+
+.re-property-description,
+.re-contact p {
+  color: #5C5C5C;
+}
+
+.re-property-link {
+  background: #1F3850;
+  color: #FFFFFF;
+  padding: 0.55rem 1rem;
+  text-decoration: none;
+}
+
+.re-property-link:hover,
+.re-property-link:focus-visible {
+  background: #06417C;
+  color: #FFFFFF;
+}
+
+.re-contact {
+  background: #E1DFDB;
+}
+
+.re-contact p {
+  padding: 0.15rem 0.5rem;
+}
+
+.re-contact a {
+  color: #1F3850;
+}
+
+.re-available { color: #38761D; }
+.re-unavailable { color: #CC0000; }
+
+.re-property-description,
+.re-contact p {
+  color: #5F6368;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.re-property-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.re-contact {
+  border-top: 1px solid #E1DFDB;
+  padding-bottom: 1rem;
+  padding-top: 2.5rem;
+}
+
+.re-contact p + p {
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 640px) {
+  .re-site-main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .re-intro {
+    padding-top: 2.1rem;
+  }
+
+  .re-property-image {
+    height: 210px;
+  }
+}
+
+/* ===== PORTFOLIO SECTION (HOMEPAGE) ===== */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 992px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-section-alt);
+  border: 1px solid var(--border-color);
+  border-top: 2px solid var(--btn-black);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.portfolio-card-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: var(--btn-black);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-card-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: #FFF;
+  fill: none;
+}
+
+.portfolio-card-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--text-main);
+}
+
+.portfolio-card-body p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.portfolio-card-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--btn-black);
+}
+
+/* ===== REAL ESTATE PAGE (CLIENT LAYOUT) ===== */
+.re-hero {
+  background: #00305F;
+  color: #FFF;
+  padding: 3.75rem 0 3.5rem;
+  text-align: center;
+}
+
+.re-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.85rem;
+  text-transform: uppercase;
+}
+
+.re-hero h1 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.re-section {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 3rem 0 0;
+}
+
+.re-section h2 {
+  color: #00305F;
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+  text-align: center;
+}
+
+.re-about p {
+  color: #5F6368;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+
+.re-hero p {
+  font-size: 1rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.re-grid {
+  display: grid;
+  gap: 1.75rem;
+  margin: 0 auto 3rem;
+  max-width: 620px;
+}
+
+.re-card {
+  background: #FFF;
+  border: 1px solid #E1DFDB;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.re-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 48, 95, 0.1);
+}
+
+.re-card-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #E1DFDB;
+}
+
+.re-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.re-status {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.re-available {
+  background: #E6F4EA;
+  color: #38761d;
+}
+
+.re-unavailable {
+  background: #FCE8E6;
+  color: #cc0000;
+}
+
+.re-card-body {
+  padding: 1.25rem;
+}
+
+.re-card-type {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #00305F;
+  margin-bottom: 0.25rem;
+}
+
+.re-card-title {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 0.25rem;
+}
+
+.re-card-location {
+  font-size: 0.85rem;
+  color: #5F6368;
+  margin-bottom: 0.5rem;
+}
+
+.re-card-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #00305F;
+  margin-bottom: 0.5rem;
+}
+
+.re-card-desc {
+  font-size: 0.88rem;
+  color: #5F6368;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.re-card-details {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: #5F6368;
+  margin-bottom: 0.75rem;
+}
+
+.re-card-details strong {
+  color: #212121;
+}
+
+.re-card-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.re-feature-tag {
+  background: #E1DFDB;
+  border: none;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #212121;
+}
+
+.re-contact {
+  text-align: center;
+  padding: 2.5rem;
+  background: #E1DFDB;
+  border: none;
+  border-radius: 8px;
+  margin: 3rem auto 2rem;
+  max-width: 760px;
+}
+
+.re-contact h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 0.5rem;
+}
+
+.re-contact p {
+  font-size: 0.9rem;
+  color: #5F6368;
+  margin-bottom: 1.25rem;
+}
+
+.re-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25D366;
+  color: #FFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.re-whatsapp-btn:hover {
+  background: #1DA851;
+}
+
+@media (max-width: 640px) {
+  .re-container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .re-section {
+    padding-top: 2.25rem;
+  }
+
+  .re-grid {
+    grid-template-columns: 1fr;
+  }
+  .re-hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Keep the document-like Google Sites treatment above legacy card styles. */
+.re-contact {
+  background: transparent;
+  border-radius: 0;
+  border-top: 1px solid #E1DFDB;
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 2.5rem 0 1rem;
+}
+
+.re-contact p {
+  margin-bottom: 0;
+}
+
+.re-available,
+.re-unavailable {
+  background: transparent;
 }

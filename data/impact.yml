@@ -1,3 +1,13 @@
+# ==============================================================================
+#                 MÉTRICAS E IMPACTO PROFISSIONAL (impact.yml)
+# ==============================================================================
+# Este arquivo alimenta os cartões numéricos de destaque na página inicial.
+# Altere o valor (value) ou as frases nos idiomas correspondentes.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# MÉTRICA 1: LAUDOS PERICIAIS
+# ------------------------------------------------------------------------------
 - value: "690"
   label_en: "Forensic reports"
   label_pt: "Laudos periciais"
@@ -6,6 +16,9 @@
   context_pt: "Emitidos desde 2018"
   context_es: "Emitidos desde 2018"
 
+# ------------------------------------------------------------------------------
+# MÉTRICA 2: IMÓVEIS CONSTRUÍDOS
+# ------------------------------------------------------------------------------
 - value: "13"
   label_en: "Real Estate Properties"
   label_pt: "Imóveis"
@@ -14,6 +27,9 @@
   context_pt: "Construídos desde 2020"
   context_es: "Construidas desde 2020"
 
+# ------------------------------------------------------------------------------
+# MÉTRICA 3: ARTIGOS CIENTÍFICOS
+# ------------------------------------------------------------------------------
 - value: "5"
   label_en: "Peer-reviewed articles"
   label_pt: "Artigos revisados por pares"
@@ -22,6 +38,9 @@
   context_pt: "Publicados desde 2023"
   context_es: "Publicados desde 2023"
 
+# ------------------------------------------------------------------------------
+# MÉTRICA 4: COLABORAÇÕES INTERNACIONAIS
+# ------------------------------------------------------------------------------
 - value: "4"
   label_en: "International collaborations"
   label_pt: "Colaborações internacionais"

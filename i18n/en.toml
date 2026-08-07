@@ -129,3 +129,84 @@ other = "Present"
 
 [years_short]
 other = "yrs"
+
+[portfolio]
+other = "Portfolio"
+
+[real_estate_properties]
+other = "Available Properties"
+
+[real_estate_brand_title]
+other = "Live in a <span class=\"highlight\">Well-Made Home</span> 🏡"
+
+[real_estate_about_heading]
+other = "Who we are"
+
+[real_estate_about]
+other = "We build properties for sale and rent in Primavera do Leste, Mato Grosso. We offer facilitated contracts, providing peace of mind and agility throughout the rental process. We are not a real estate agency and do not advertise third-party properties. The properties listed on this site are managed by their respective owners."
+
+[real_estate_properties_heading]
+other = "Our properties"
+
+[view_property]
+other = "View property"
+
+[contact_heading]
+other = "Contact"
+
+[real_estate_intro]
+other = "Real Estate Portfolio"
+
+[view_properties]
+other = "View Properties"
+
+[contact_owner]
+other = "Contact the Owner"
+
+[contact_owner_intro]
+other = "Interested? Get in touch via WhatsApp."
+
+[back_to_main]
+other = "Back to main site"
+
+[unit_available]
+other = "Unit available ✅"
+
+[unit_unavailable]
+other = "No units available ⚠️"
+
+[property_features_heading]
+other = "Property Features"
+
+[rent_price_label]
+other = "Rental Price:"
+
+[bonus_label]
+other = "BONUS:"
+
+[meet_the_property_heading]
+other = "Explore the Property"
+
+[property_location_heading]
+other = "Property Location"
+
+[contact_whatsapp_text]
+other = "Get in touch via WhatsApp at:"
+
+[contact_owner_label]
+other = "Speak with Emiliano (Owner)"
+
+[bedrooms]
+other = "bedrooms"
+
+[bathrooms]
+other = "bathrooms"
+
+[tenant_form_button]
+other = "Fill Tenant Interest Form 📝"
+
+[tenant_form_heading]
+other = "Tenant Interest Registration"
+
+[tenant_form_intro]
+other = "Fill out your details to receive priority support during background verification."

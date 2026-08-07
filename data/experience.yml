@@ -1,4 +1,16 @@
+# ==============================================================================
+#                     EXPERIÊNCIA PROFISSIONAL (experience.yml)
+# ==============================================================================
+# Este arquivo é dividido em 3 categorias:
+# 1. research: Experiência Acadêmica e Pesquisas
+# 2. professional: Experiência Profissional e Pericial
+# 3. teaching: Experiência em Docência e Coordenação
+# ==============================================================================
+
 research:
+  # ----------------------------------------------------------------------------
+  # PESQUISA 1: NAP.MINERAÇÃO (USP)
+  # ----------------------------------------------------------------------------
   - period: "2023–Present"
     role_en: "Researcher"
     role_pt: "Pesquisador"
@@ -8,6 +20,9 @@ research:
     details_pt: "Realiza pesquisa sobre mineração de ouro artesanal e de pequena escala sustentável no Brasil, Colômbia e Suriname. Executa diagnósticos de campo, amostragem ambiental e de processo e análise de dados para avaliar a recuperação de ouro, as perdas de mercúrio e a eficiência no uso de recursos. Contribui para estratégias de processamento sem mercúrio e valorização de rejeitos de mineração."
     details_es: "Realiza investigación sobre minería de oro artesanal y de pequeña escala sostenible en Brasil, Colombia y Surinam. Realiza diagnósticos de campo, muestreo ambiental y de proceso, y análisis de datos para evaluar la recuperación de oro, las pérdidas de mercurio y la eficiencia en el uso de recursos. Contribuye a estrategias de procesamiento sin mercurio y valorización de relaves mineros."
 
+  # ----------------------------------------------------------------------------
+  # PESQUISA 2: UNIVERSITY OF BRITISH COLUMBIA (CANADÁ)
+  # ----------------------------------------------------------------------------
   - period: "2011"
     role_en: "Visiting Research Student"
     role_pt: "Estudante Pesquisador Visitante"
@@ -17,6 +32,9 @@ research:
     details_pt: "Realizou pesquisa em geoquímica ambiental como bolsista do Emerging Leaders in the Americas Program, sob supervisão do Prof. Marcello Mariz da Veiga. Investigou parâmetros de qualidade da água e a geoquímica do selênio em ambientes de mineração de carvão."
     details_es: "Realizó investigación en geoquímica ambiental como becario del Emerging Leaders in the Americas Program, bajo la supervisión del Prof. Marcello Mariz da Veiga. Investigó parámetros de calidad del agua y la geoquímica del selenio en entornos de minería de carbón."
 
+  # ----------------------------------------------------------------------------
+  # PESQUISA 3: LORAX ENVIRONMENTAL SERVICES (CANADÁ)
+  # ----------------------------------------------------------------------------
   - period: "2011"
     role_en: "Junior Geochemist, Trainee"
     role_pt: "Geoquímico Júnior, Estagiário"
@@ -26,7 +44,11 @@ research:
     details_pt: "Contribuiu para o projeto Role of Nitrate in the Remobilization and Attenuation of Selenium in Coal Mine Waste, envolvendo a Lorax, o programa Mine Environment Neutral Drainage, a Natural Resources Canada e parceiros da indústria. Analisou dados de águas superficiais e geoquímicos de operações de mineração de carvão."
     details_es: "Contribuyó al proyecto Role of Nitrate in the Remobilization and Attenuation of Selenium in Coal Mine Waste, en colaboración con Lorax, el programa Mine Environment Neutral Drainage, Natural Resources Canada y socios industriales. Analizó datos de aguas superficiales y geoquímicos de operaciones de minería de carbón."
 
+
 professional:
+  # ----------------------------------------------------------------------------
+  # PROFISSIONAL 1: ENGENHARIA DE CONSTRUÇÃO
+  # ----------------------------------------------------------------------------
   - period: "2022–Present"
     role_en: "Construction Engineer"
     role_pt: "Engenheiro de Construção"
@@ -36,6 +58,9 @@ professional:
     details_pt: "Gerencia a execução de campo, orçamento, alocação de recursos, compras e controle de qualidade de mais de dez projetos residenciais. Coordena equipes de construção e fornecedores, controla custos e uso de materiais e entrega soluções práticas sob restrições operacionais."
     details_es: "Gestiona la ejecución de campo, presupuestos, asignación de recursos, compras y control de calidad de más de diez proyectos residenciales. Coordina equipos de construcción y proveedores, controla costos y uso de materiales, y entrega soluciones prácticas bajo restricciones operativas."
 
+  # ----------------------------------------------------------------------------
+  # PROFISSIONAL 2: PERITO OFICIAL CRIMINAL (POLITEC)
+  # ----------------------------------------------------------------------------
   - period: "2014–Present"
     role_en: "Official Forensic Expert and Crime Scene Investigator"
     role_pt: "Perito Oficial Criminal e Investigador de Local de Crime"
@@ -45,7 +70,11 @@ professional:
     details_pt: "Realiza exames periciais oficiais e investigações de locais de crime que subsidiam processos de justiça criminal e decisões de segurança pública. Aplica procedimentos rigorosos de coleta, documentação e análise de evidências e controle da cadeia de custódia, elaborando laudos tecnicamente defensáveis para processos judiciais. Atuou como Gerente Regional das unidades de Juína e Primavera do Leste, coordenando operações e articulando-se com autoridades judiciais e regulatórias."
     details_es: "Realiza exámenes forenses oficiales e investigaciones de escenas del crimen que respaldan procesos de justicia penal y decisiones de seguridad pública. Aplica procedimientos rigurosos de recolección, documentación y análisis de evidencias y control de la cadena de custodia, y prepara informes técnicamente defendibles para procedimientos judiciales. Anteriormente se desempeñó como Gerente Regional de las unidades de Juína y Primavera do Leste, coordinando operaciones y articulándose con autoridades judiciales y regulatorias."
 
+
 teaching:
+  # ----------------------------------------------------------------------------
+  # DOCÊNCIA 1: FACULDADE POLIENSINO
+  # ----------------------------------------------------------------------------
   - period: "2017–2020"
     role_en: "Part-time Lecturer and Program Coordinator"
     role_pt: "Professor e Coordenador de Programa"
@@ -55,29 +84,14 @@ teaching:
     details_pt: "Coordenou e lecionou disciplinas de especialização de pós-graduação em Criminalística e Ciências Forenses, com ênfase em processamento de locais de crime e metodologias de investigação forense."
     details_es: "Coordinó e impartió cursos de especialización de posgrado en Criminalística y Ciencias Forenses, con énfasis en procesamiento de escenas del crimen y metodologías de investigación forense."
 
+  # ----------------------------------------------------------------------------
+  # DOCÊNCIA 2: PROFESSOR DE TEMPO INTEGRAL
+  # ----------------------------------------------------------------------------
   - period: "2012–2014"
     role_en: "Full-time Lecturer"
     role_pt: "Professor de Tempo Integral"
     role_es: "Profesor de Tiempo Completo"
-    organization: "Centro Universitário de Várzea Grande (UNIVAG), Mato Grosso, Brazil"
-    details_en: "Taught Statistics, Materials Science, General Chemistry, and Analytical Chemistry. Contributed to the institutional accreditation process for the Civil Engineering program."
-    details_pt: "Lecionou Estatística, Ciência dos Materiais, Química Geral e Química Analítica. Contribuiu para o processo institucional de reconhecimento do curso de Engenharia Civil."
-    details_es: "Impartió Estadística, Ciencia de Materiales, Química General y Química Analítica. Contribuyó al proceso institucional de acreditación del programa de Ingeniería Civil."
-
-  - period: "2011–2014"
-    role_en: "Guest Lecturer"
-    role_pt: "Professor Convidado"
-    role_es: "Profesor Invitado"
-    organization: "State University of Mato Grosso (UNEMAT), Mato Grosso, Brazil"
-    details_en: "Delivered classroom and laboratory modules in General and Analytical Chemistry for chemistry degree students."
-    details_pt: "Ministrou módulos teóricos e laboratoriais de Química Geral e Química Analítica para estudantes de graduação em Química."
-    details_es: "Impartió módulos teóricos y de laboratorio de Química General y Química Analítica para estudiantes de grado en Química."
-
-  - period: "2010–2011"
-    role_en: "Assistant Professor"
-    role_pt: "Professor Assistente"
-    role_es: "Profesor Auxiliar"
-    organization: "Federal University of Mato Grosso (UFMT), Mato Grosso, Brazil"
-    details_en: "Taught Applied Analytical Chemistry and General Chemistry for Civil, Sanitary, and Environmental Engineering programs. Managed laboratory sessions and supported student training in chemical-analysis methods."
-    details_pt: "Lecionou Química Analítica Aplicada e Química Geral para cursos de Engenharia Civil, Sanitária e Ambiental. Gerenciou atividades laboratoriais e apoiou a formação de estudantes em métodos de análise química."
-    details_es: "Impartió Química Analítica Aplicada y Química General para programas de Ingeniería Civil, Sanitaria y Ambiental. Gestionó sesiones de laboratorio y apoyó la formación de estudiantes en métodos de análisis químico."
+    organization: "State Department of Education, Mato Grosso, Brazil"
+    details_en: "Taught Chemistry courses for upper-secondary education, developing instructional materials and laboratory activities."
+    details_pt: "Lecionou disciplinas de Química para o ensino médio, desenvolvendo materiais didáticos e atividades de laboratório."
+    details_es: "Impartió cursos de Química para educación secundaria superior, desarrollando materiales didácticos y actividades de laboratorio."

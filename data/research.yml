@@ -1,3 +1,12 @@
+# ==============================================================================
+#                  PROJETOS E LINHAS DE PESQUISA (research.yml)
+# ==============================================================================
+# Este arquivo lista os seus principais focos de pesquisa científica e tecnológica.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# LINHA 1: PROCESSAMENTO DE OURO SEM MERCÚRIO
+# ------------------------------------------------------------------------------
 - id: "mercury-free-extraction"
   title_en: "Mercury-Free Gold Extraction & Alternative Lixiviants"
   title_pt: "Processamento de Ouro Sem Mercúrio e Lixiviantes Alternativos"
@@ -6,6 +15,9 @@
   desc_pt: "Diagnóstico sistêmico de circuitos de amalgamação e cianetação, avaliação de perdas de mercúrio e desenvolvimento de rotas limpas utilizando resíduos agroindustriais (como manipueira)."
   desc_es: "Diagnóstico sistémico de circuitos de amalgamación y cianuración, evaluación de pérdidas de mercurio y desarrollo de rutas limpias utilizando residuos agroindustriales (como aguas residuales de yuca)."
 
+# ------------------------------------------------------------------------------
+# LINHA 2: ECONOMIA CIRCULAR E REJEITOS
+# ------------------------------------------------------------------------------
 - id: "tailings-circular-economy"
   title_en: "Tailings Valorization & Circular Economy"
   title_pt: "Economia Circular e Valorização de Rejeitos Minerais"
@@ -14,6 +26,9 @@
   desc_pt: "Reprocessamento e conversão de rejeitos de mineração artesanal em materiais estruturais (tijolos de cimento e rejeito) e modelos de microempresas sustentáveis."
   desc_es: "Reprocesamiento y conversión de relaves mineros artesanales en materiales estructurales (ladrillos de cemento y relaves) y modelos de microempresas sostenibles."
 
+# ------------------------------------------------------------------------------
+# LINHA 3: DIAGNÓSTICO METALÚRGICO DE CAMPO
+# ------------------------------------------------------------------------------
 - id: "field-diagnostics-process-eng"
   title_en: "Field Metallurgical Diagnostics & Process Engineering"
   title_pt: "Diagnóstico Metalúrgico de Campo e Engenharia de Processos"

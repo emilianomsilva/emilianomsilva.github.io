@@ -10,6 +10,7 @@ theme = []
   [languages.en]
     languageName = "English"
     languageCode = "en"
+    contentDir = "content/en"
     weight = 1
     title = "Emiliano M. Silva's Website"
   [languages.en.params]
@@ -19,6 +20,7 @@ theme = []
   [languages.pt]
     languageName = "Português"
     languageCode = "pt"
+    contentDir = "content/pt"
     weight = 2
     title = "Emiliano M. Silva's Website"
   [languages.pt.params]
@@ -28,6 +30,7 @@ theme = []
   [languages.es]
     languageName = "Español"
     languageCode = "es"
+    contentDir = "content/es"
     weight = 3
     title = "Emiliano M. Silva's Website"
   [languages.es.params]

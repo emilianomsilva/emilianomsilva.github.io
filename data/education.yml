@@ -1,3 +1,13 @@
+# ==============================================================================
+#                     FORMAÇÃO ACADÊMICA (education.yml)
+# ==============================================================================
+# Este arquivo contém seu histórico acadêmico ordenado do mais recente ao mais antigo.
+# Para adicionar uma nova formação, copie um bloco existente e altere os campos.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. DOUTORADO EM ENGENHARIA MINERAL
+# ------------------------------------------------------------------------------
 - period: "2023–Present"
   degree_en: "Ph.D. Candidate in Mineral Engineering"
   degree_pt: "Doutorado em Engenharia Mineral"
@@ -7,6 +17,9 @@
   details_pt: "Pesquisa sobre rotas de processamento sem mercúrio para a mineração artesanal e de pequena escala, com ênfase em tecnologias alternativas de lixiviação, recuperação de ouro e processamento mineral sustentável."
   details_es: "Investigación sobre rutas de procesamiento sin mercurio para la minería artesanal y de pequeña escala, con énfasis en tecnologías alternativas de lixiviación, recuperación de oro y procesamiento mineral sostenible."
 
+# ------------------------------------------------------------------------------
+# 2. BACHARELADO EM ENGENHARIA CIVIL
+# ------------------------------------------------------------------------------
 - period: "2020–2022"
   degree_en: "B.Sc. in Civil Engineering"
   degree_pt: "Bacharelado em Engenharia Civil"
@@ -16,6 +29,9 @@
   details_pt: "O trabalho final investigou tijolos de solo-cimento como material de menor impacto para a construção sustentável."
   details_es: "El proyecto final investigó ladrillos de suelo-cemento como material de menor impacto para la construcción sostenible."
 
+# ------------------------------------------------------------------------------
+# 3. ESPECIALIZAÇÃO EM PERÍCIA CRIMINAL
+# ------------------------------------------------------------------------------
 - period: "2017–2018"
   degree_en: "Specialization in Criminal Forensics and Forensic Sciences"
   degree_pt: "Especialização em Perícia Criminal e Ciências Forenses"
@@ -25,6 +41,9 @@
   details_pt: "Especialização de pós-graduação em criminalística, metodologias forenses e protocolos de investigação de local de crime."
   details_es: "Especialización de posgrado en criminalística, metodologías forenses y protocolos de investigación de la escena del crimen."
 
+# ------------------------------------------------------------------------------
+# 4. MESTRADO EM GEOCIÊNCIAS
+# ------------------------------------------------------------------------------
 - period: "2010–2012"
   degree_en: "M.Sc. in Geosciences"
   degree_pt: "Mestrado em Geociências"
@@ -34,6 +53,9 @@
   details_pt: "Dissertação: Análise estatística de parâmetros de qualidade de águas superficiais como indicadores da geoquímica do selênio em uma mina de carvão canadense. Período de pesquisa na University of British Columbia, Vancouver, Canadá, com bolsa ELAP."
   details_es: "Tesis: Análisis estadístico de parámetros de calidad de aguas superficiales como indicadores de la geoquímica del selenio en una mina de carbón canadiense. Período de investigación en la University of British Columbia, Vancouver, Canadá, con una beca ELAP."
 
+# ------------------------------------------------------------------------------
+# 5. BACHARELADO EM QUÍMICA
+# ------------------------------------------------------------------------------
 - period: "2005–2009"
   degree_en: "B.Sc. in Chemistry"
   degree_pt: "Bacharelado em Química"

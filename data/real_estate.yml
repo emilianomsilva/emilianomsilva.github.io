@@ -1,0 +1,247 @@
+# ==============================================================================
+#                      PORTFÓLIO IMOBILIÁRIO - DADOS DOS IMÓVEIS
+# ==============================================================================
+# Este arquivo é o centro de controle dos imóveis do site.
+# Ele suporta legendas e campos multilíngues: _pt (Português), _en (Inglês) e _es (Espanhol).
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# IMÓVEL 1: APARTAMENTOS BURITIS V
+# ------------------------------------------------------------------------------
+- id: "buritis-v"
+  title: "Buritis V"
+  type_pt: "Apartamentos"
+  type_en: "Apartments"
+  type_es: "Apartamentos"
+  icon: "🏢"
+
+  available: false
+
+  short_desc_pt: "Apartamentos de 01 dormitório (suíte), localizados na Rua Indaiá, 643, Buritis V, Primavera do Leste-MT."
+  short_desc_en: "1-bedroom apartments (suite), located at Rua Indaiá, 643, Buritis V, Primavera do Leste-MT."
+  short_desc_es: "Apartamentos de 01 dormitorio (suite), ubicados en Rua Indaiá, 643, Buritis V, Primavera do Leste-MT."
+
+  intro_pt: "Edificação contendo dois (02) apartamentos, com 36 m² de área privativa, compostos de:"
+  intro_en: "Building containing two (02) apartments, with 36 m² of private area, composed of:"
+  intro_es: "Edificación que contiene dos (02) apartamentos, con 36 m² de área privada, compuestos de:"
+
+  features_pt:
+    - "Uma suíte"
+    - "Sala e cozinha conjugada"
+    - "Lavanderia privativa"
+    - "Acabamento de ótima qualidade"
+    - "Área comum compartilhada"
+    - "Garagem descoberta"
+    - "Livre de água, IPTU e seguro"
+
+  features_en:
+    - "One suite"
+    - "Combined living room and kitchen"
+    - "Private laundry area"
+    - "High quality finishing"
+    - "Shared common area"
+    - "Uncovered parking"
+    - "Free of water, property tax (IPTU) and insurance"
+
+  features_es:
+    - "Una suite"
+    - "Sala y cocina integrada"
+    - "Lavandería privada"
+    - "Acabado de excelente calidad"
+    - "Área común compartida"
+    - "Estacionamiento descubierto"
+    - "Exento de agua, IPTU e seguro"
+
+  price_pt: "R$ 1.350,00"
+  price_en: "R$ 1,350.00"
+  price_es: "R$ 1.350,00"
+
+  bonus_pt: "desconto de R$ 100,00 para pagamento até dia 10 de cada mês, totalizando R$ 1.250,00"
+  bonus_en: "R$ 100.00 discount for payment by the 10th of each month, totaling R$ 1,250.00"
+  bonus_es: "descuento de R$ 100,00 para pago hasta el día 10 de cada mes, totalizando R$ 1.250,00"
+
+  terms_pt:
+    - "Não exigimos fiador nem cheque caução"
+    - "Contrato diretamente com o proprietário ou por intermediação de imobiliária, mediante análise de cadastro"
+
+  terms_en:
+    - "We do not require a guarantor or security deposit check"
+    - "Contract directly with the owner or through a real estate agency, subject to background approval"
+
+  terms_es:
+    - "No exigimos fiador ni depósito en garantía"
+    - "Contrato directamente con el propietario o mediante agencia inmobiliaria, previa evaluación de antecedentes"
+
+  map_url: "https://maps.google.com/maps?q=-15.533553,-54.341336&hl=pt&z=17&output=embed"
+
+  photos:
+    - url: "/images/real-estate/buritis-v/buritis-v_01.jpg"
+      caption_pt: "Vista frontal do imóvel"
+      caption_en: "Front view of the property"
+      caption_es: "Vista frontal del inmueble"
+
+    - url: "/images/real-estate/buritis-v/buritis-v_02.jpg"
+      caption_pt: "Imóvel de esquina, bem localizado"
+      caption_en: "Corner property, well located"
+      caption_es: "Inmueble de esquina, bien ubicado"
+
+    - url: "/images/real-estate/buritis-v/buritis-v_03.jpg"
+      caption_pt: "Amplo quintal com possibilidade de estacionamento para carros e motos"
+      caption_en: "Spacious yard with parking options for cars and motorcycles"
+      caption_es: "Amplio patio con posibilidad de estacionamiento para autos y motos"
+
+    - url: "/images/real-estate/buritis-v/buritis-v_04.jpg"
+      caption_pt: "Esquadrias em alumínio"
+      caption_en: "Aluminum window and door frames"
+      caption_es: "Marcos de aluminio"
+
+    - url: "/images/real-estate/buritis-v/buritis-v_05.jpeg"
+      caption_pt: "Cozinha com pia instalada e acesso à lavanderia"
+      caption_en: "Kitchen with installed sink and access to the laundry"
+      caption_es: "Cocina con fregadero instalado y acceso a la lavandería"
+
+    - url: "/images/real-estate/buritis-v/buritis-v_06.jpeg"
+      caption_pt: "Ampla área para sala de estar e jantar"
+      caption_en: "Spacious open area for living and dining room"
+      caption_es: "Amplia área para sala de estar y comedor"
+
+    - url: "/images/real-estate/buritis-v/buritis-v_07.jpeg"
+      caption_pt: "Suíte espaçosa, com janela black-out"
+      caption_en: "Spacious suite with blackout window"
+      caption_es: "Amplia suite con ventana blackout"
+
+    - url: "/images/real-estate/buritis-v/buritis-v_08.jpeg"
+      caption_pt: "Suíte com espaço e conforto"
+      caption_en: "Suite with space and comfort"
+      caption_es: "Suite con espacio y confort"
+
+    - url: "/images/real-estate/buritis-v/buritis-v_09.jpeg"
+      caption_pt: "Banheiro espaçoso, com janela de vidro temperado"
+      caption_en: "Spacious bathroom with tempered glass window"
+      caption_es: "Baño espacioso con ventana de vidrio templado"
+
+    - url: "/images/real-estate/buritis-v/buritis-v_10.jpg"
+      caption_pt: "Lavanderia privativa"
+      caption_en: "Private laundry area"
+      caption_es: "Lavandería privada"
+
+
+# ------------------------------------------------------------------------------
+# IMÓVEL 2: CASAS JARDIM EUROPA III
+# ------------------------------------------------------------------------------
+- id: "europa-iii"
+  title: "Jardim Europa III"
+  type_pt: "Casas"
+  type_en: "Houses"
+  type_es: "Casas"
+  icon: "🏠"
+
+  available: true
+
+  short_desc_pt: "Casas de dois dormitórios, localizadas na Rua Portugal, Jardim Europa III, Primavera do Leste-MT."
+  short_desc_en: "Two-bedroom houses located at Rua Portugal, Jardim Europa III, Primavera do Leste-MT."
+  short_desc_es: "Casas de dos dormitorios, ubicadas en Rua Portugal, Jardim Europa III, Primavera do Leste-MT."
+
+  intro_pt: "Casas geminadas, com 75 m² de área privativa, compostas de:"
+  intro_en: "Semi-detached houses with 75 m² of private area, composed of:"
+  intro_es: "Casas adosadas con 75 m² de área privada, compuestas de:"
+
+  features_pt:
+    - "Dois quartos"
+    - "Sala e cozinha conjugada"
+    - "Lavanderia coberta"
+    - "Acabamento de ótima qualidade"
+    - "Garagem privativa"
+    - "Portão eletrônico"
+    - "Livre de água, IPTU e seguro"
+
+  features_en:
+    - "Two bedrooms"
+    - "Combined living room and kitchen"
+    - "Covered laundry area"
+    - "High quality finishing"
+    - "Private garage"
+    - "Automatic gate"
+    - "Free of water, property tax (IPTU) and insurance"
+
+  features_es:
+    - "Dos dormitorios"
+    - "Sala y cocina integrada"
+    - "Lavandería cubierta"
+    - "Acabado de excelente calidad"
+    - "Garaje privado"
+    - "Portón eléctrico"
+    - "Exento de agua, IPTU e seguro"
+
+  price_pt: "R$ 2.200,00"
+  price_en: "R$ 2,200.00"
+  price_es: "R$ 2.200,00"
+
+  bonus_pt: "desconto de R$ 200,00 para pagamento até dia 10 de cada mês, totalizando R$ 2.000,00"
+  bonus_en: "R$ 200.00 discount for payment by the 10th of each month, totaling R$ 2,000.00"
+  bonus_es: "descuento de R$ 200,00 para pago hasta el día 10 de cada mes, totalizando R$ 2.000,00"
+
+  terms_pt:
+    - "Não exigimos fiador nem cheque caução"
+    - "Contrato diretamente com o proprietário ou por intermediação de imobiliária, mediante análise de cadastro"
+
+  terms_en:
+    - "We do not require a guarantor or security deposit check"
+    - "Contract directly with the owner or through a real estate agency, subject to background approval"
+
+  terms_es:
+    - "No exigimos fiador ni depósito en garantía"
+    - "Contrato directamente con el propietario o mediante agencia inmobiliaria, previa evaluación de antecedentes"
+
+  map_url: "https://maps.google.com/maps?q=-15.515249224503636,-54.31557762160264&hl=pt&z=17&output=embed"
+
+  photos:
+    - url: "/images/real-estate/europa-iii/europa-iii_01.jpg"
+      caption_pt: "Portão de elevação, com motor instalado"
+      caption_en: "Overhead gate with electric motor installed"
+      caption_es: "Portón levadizo con motor instalado"
+
+    - url: "/images/real-estate/europa-iii/europa-iii_02.jpg"
+      caption_pt: "Vista frontal da casa"
+      caption_en: "Front view of the house"
+      caption_es: "Vista frontal de la casa"
+
+    - url: "/images/real-estate/europa-iii/europa-iii_03.jpg"
+      caption_pt: "Ampla cozinha e sala embutidas"
+      caption_en: "Spacious open living and kitchen area"
+      caption_es: "Amplia cocina y sala integradas"
+
+    - url: "/images/real-estate/europa-iii/europa-iii_04.jpg"
+      caption_pt: "Dormitórios espaçosos com 11,50 m²"
+      caption_en: "Spacious bedrooms measuring 11.50 m²"
+      caption_es: "Dormitorios espaciosos de 11,50 m²"
+
+    - url: "/images/real-estate/europa-iii/europa-iii_05.jpg"
+      caption_pt: "Corredor de acesso aos dormitórios, banheiro, poço de luz e lavanderia"
+      caption_en: "Hallway providing access to bedrooms, bathroom, lightwell, and laundry"
+      caption_es: "Pasillo de acceso a dormitorios, baño, patio de luz y lavandería"
+
+    - url: "/images/real-estate/europa-iii/europa-iii_06.jpg"
+      caption_pt: "Acesso ao dormitório e poço de luz"
+      caption_en: "Access to bedroom and lightwell area"
+      caption_es: "Acceso al dormitorio y patio de luz"
+
+    - url: "/images/real-estate/europa-iii/europa-iii_07.jpg"
+      caption_pt: "Banheiro com bancada de granito e box de vidro temperado"
+      caption_en: "Bathroom with granite countertop and tempered glass shower stall"
+      caption_es: "Baño con mesada de granito y mampara de vidrio templado"
+
+    - url: "/images/real-estate/europa-iii/europa-iii_08.jpg"
+      caption_pt: "Banheiro com bancada de granito e box de vidro temperado"
+      caption_en: "Bathroom with granite countertop and tempered glass shower stall"
+      caption_es: "Baño con mesada de granito y mampara de vidrio templado"
+
+    - url: "/images/real-estate/europa-iii/europa-iii_09.jpg"
+      caption_pt: "Espaçoso poço de luz, com ponto de água"
+      caption_en: "Spacious inner lightwell with water point"
+      caption_es: "Espacioso patio de luz con punto de agua"
+
+    - url: "/images/real-estate/europa-iii/europa-iii_10.jpg"
+      caption_pt: "Lavanderia coberta, com tanque duplo instalado"
+      caption_en: "Covered laundry area with double sink installed"
+      caption_es: "Lavandería cubierta con doble pileta instalada"

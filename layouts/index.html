@@ -206,11 +206,35 @@
   </div>
 </section>
 
-<!-- SECTION 9: CONTACT (DIRECT GOOGLE FORMS INTEGRATION) -->
+<!-- SECTION 9: PORTFOLIO -->
+<section class="page-section" id="portfolio">
+  <div class="section-head">
+    <h2>{{ i18n "portfolio" }}</h2>
+    <a onclick="scrollToSection('about')" class="section-num-btn" title="{{ i18n "back_to_top" }}">{{ printf (i18n "section_label") "09" }}</a>
+  </div>
+
+  <div class="portfolio-grid">
+    <a href="{{ "real-estate/" | relLangURL }}" class="portfolio-card">
+      <div class="portfolio-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <div class="portfolio-card-body">
+        <h3>{{ i18n "real_estate_properties" }}</h3>
+        <p>{{ i18n "real_estate_intro" }}</p>
+        <span class="portfolio-card-link">{{ i18n "view_properties" }} →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- SECTION 10: CONTACT (DIRECT GOOGLE FORMS INTEGRATION) -->
 <section class="page-section" id="contact">
   <div class="section-head">
     <h2>{{ i18n "contact" }}</h2>
-    <a onclick="scrollToSection('about')" class="section-num-btn" title="{{ i18n "back_to_top" }}">{{ printf (i18n "section_label") "09" }}</a>
+    <a onclick="scrollToSection('about')" class="section-num-btn" title="{{ i18n "back_to_top" }}">{{ printf (i18n "section_label") "10" }}</a>
   </div>
 
   <form id="gform-contact" onsubmit="handleGoogleFormSubmit(event)" class="contact-form">
@@ -268,8 +292,8 @@
         btn.innerText = '{{ i18n "form_send" }}';
         statusBox.style.display = 'block';
         statusBox.style.background = '#F3F4F6';
-        statusBox.style.border = '1px solid #263746';
-        statusBox.style.color = '#263746';
+        statusBox.style.border = '1px solid #1F3850';
+        statusBox.style.color = '#1F3850';
         statusBox.innerText = '{{ i18n "form_success" }}';
       })
       .catch(() => {

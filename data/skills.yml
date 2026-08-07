@@ -1,4 +1,13 @@
+# ==============================================================================
+#                  HABILIDADES E COMPETÊNCIAS (skills.yml)
+# ==============================================================================
+# Este arquivo lista suas competências técnicas, liderança e métodos de pesquisa.
+# ==============================================================================
+
 competencies:
+  # ----------------------------------------------------------------------------
+  # CATEGORIA 1: ESPECIALIZAÇÃO TÉCNICA
+  # ----------------------------------------------------------------------------
   - category_en: "Technical Expertise"
     category_pt: "Especialização Técnica"
     category_es: "Especialización Técnica"
@@ -48,6 +57,9 @@ competencies:
         details_pt: "Avaliação de recuperação de ouro e perdas de mercúrio."
         details_es: "Evaluación de recuperación de oro y pérdidas de mercurio."
 
+  # ----------------------------------------------------------------------------
+  # CATEGORIA 2: LIDERANÇA E PRÁTICA APLICADA
+  # ----------------------------------------------------------------------------
   - category_en: "Leadership and Applied Practice"
     category_pt: "Liderança e Prática Aplicada"
     category_es: "Liderazgo y Práctica Aplicada"
@@ -59,55 +71,47 @@ competencies:
         level: 5
         details_en: "Regional operations, quality assurance, and institutional liaison."
         details_pt: "Operações regionais, garantia da qualidade e articulação institucional."
-        details_es: "Operaciones regionales, aseguramiento de la calidad y articulación institucional."
+        details_es: "Operaciones regionales, aseguramiento de la calidad y vinculación institucional."
 
-      - name_en: "Construction Management"
-        name_pt: "Gestão de Obras"
-        name_es: "Gestión de Construcción"
+      - name_en: "Construction Engineering"
+        name_pt: "Engenharia de Construção"
+        name_es: "Ingeniería de Construcción"
         years: "3+ yrs"
-        level: 3
-        details_en: "Budgeting, work oversight, suppliers, and construction teams."
-        details_pt: "Orçamento, supervisão de obras, fornecedores e equipes de construção."
-        details_es: "Presupuestos, supervisión de obras, proveedores y equipos de construcción."
-
-      - name_en: "Teaching and Training"
-        name_pt: "Ensino e Formação"
-        name_es: "Docencia y Formación"
-        years: "7+ yrs"
         level: 4
-        details_en: "Chemistry, engineering, and forensic-science education."
-        details_pt: "Formação em química, engenharia e ciências forenses."
-        details_es: "Formación en química, ingeniería y ciencias forenses."
+        details_en: "Project delivery, resource allocation, and quality control."
+        details_pt: "Entrega de projetos, alocação de recursos e controle de qualidade."
+        details_es: "Entrega de proyectos, asignación de recursos y control de calidad."
 
-languages:
-  - name_en: "Portuguese"
-    name_pt: "Português"
-    name_es: "Portugués"
-    proficiency_en: "Native"
-    proficiency_pt: "Nativo"
-    proficiency_es: "Nativo"
-    level: 5
+      - name_en: "Higher Education Teaching"
+        name_pt: "Docência no Ensino Superior"
+        name_es: "Docencia en Educación Superior"
+        years: "5+ yrs"
+        level: 4
+        details_en: "Lecturing, curriculum development, and program coordination."
+        details_pt: "Docência, desenvolvimento curricular e coordenação de programa."
+        details_es: "Docencia, desarrollo curricular y coordinación de programa."
 
-  - name_en: "English"
-    name_pt: "Inglês"
-    name_es: "Inglés"
-    proficiency_en: "Professional proficiency"
-    proficiency_pt: "Proficiência profissional"
-    proficiency_es: "Dominio profesional"
-    level: 4
+  # ----------------------------------------------------------------------------
+  # CATEGORIA 3: PESQUISA E MÉTODOS ANALÍTICOS
+  # ----------------------------------------------------------------------------
+  - category_en: "Research Methods"
+    category_pt: "Métodos de Pesquisa"
+    category_es: "Métodos de Investigación"
+    items:
+      - name_en: "Experimental Design"
+        name_pt: "Planejamento Experimental"
+        name_es: "Diseño Experimental"
+        years: "10+ yrs"
+        level: 4
+        details_en: "Laboratory and field experimental setup and optimization."
+        details_pt: "Montagem e otimização de experimentos de laboratório e campo."
+        details_es: "Configuración y optimización de experimentos de laboratorio y campo."
 
-  - name_en: "Spanish"
-    name_pt: "Espanhol"
-    name_es: "Español"
-    proficiency_en: "Working proficiency"
-    proficiency_pt: "Proficiência de trabalho"
-    proficiency_es: "Dominio de trabajo"
-    level: 3
-
-  - name_en: "Italian"
-    name_pt: "Italiano"
-    name_es: "Italiano"
-    proficiency_en: "Currently studying"
-    proficiency_pt: "Em estudo"
-    proficiency_es: "En estudio"
-    level: 1
+      - name_en: "Geochemical Modeling"
+        name_pt: "Modelagem Geoquímica"
+        name_es: "Modelado Geoquímico"
+        years: "8+ yrs"
+        level: 3
+        details_en: "Statistical interpretation of water and mineral data."
+        details_pt: "Interpretação estatística de dados hídricos e minerais."
+        details_es: "Interpretación estadística de datos hídricos y minerales."

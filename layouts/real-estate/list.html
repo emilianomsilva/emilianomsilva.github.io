@@ -1,0 +1,87 @@
+{{ define "main" }}
+
+<!-- Top Hero Banner -->
+<header class="hero-header">
+  <div class="hero-content">
+    <h1 class="hero-title">{{ i18n "real_estate_intro" }}</h1>
+    <h2 class="hero-subtitle">{{ i18n "real_estate_brand_title" | safeHTML }}</h2>
+  </div>
+</header>
+
+<!-- Quem somos Section -->
+<section id="quem-somos">
+  <div class="section-header-banner">
+    <div class="container">
+      <h2 class="section-title">{{ i18n "real_estate_about_heading" }}</h2>
+      <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="section-back-top-btn" title="{{ i18n "back_to_top" }}" aria-label="{{ i18n "back_to_top" }}">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <p class="text-paragraph">{{ i18n "real_estate_about" }}</p>
+  </div>
+</section>
+
+<!-- Nossos imóveis Section -->
+<section id="nossos-imoveis">
+  <div class="section-header-banner">
+    <div class="container">
+      <h2 class="section-title">{{ i18n "real_estate_properties_heading" }}</h2>
+      <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="section-back-top-btn" title="{{ i18n "back_to_top" }}" aria-label="{{ i18n "back_to_top" }}">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="properties-grid">
+      {{ range site.Data.real_estate }}
+      {{ $type := index . (printf "type_%s" $.Language.Lang) | default .type_pt }}
+      {{ $shortDesc := index . (printf "short_desc_%s" $.Language.Lang) | default .short_desc_pt }}
+      <div class="property-card">
+        <div class="property-image-container">
+          <img src="{{ (index .photos 0).url | relURL }}" alt="{{ $type }} {{ .title }}" class="property-image">
+        </div>
+        <div class="property-details">
+          {{ $url := printf "real-estate/%s/" .id | relLangURL }}
+          <h3 class="property-card-title"><a href="{{ $url }}">{{ $type }} {{ .title }}</a></h3>
+          <div class="property-status {{ if .available }}status-available{{ else }}status-unavailable{{ end }}">
+            {{ if .available }}{{ i18n "unit_available" }}{{ else }}{{ i18n "unit_unavailable" }}{{ end }}
+          </div>
+          <p class="property-desc">{{ $shortDesc }}</p>
+          <a href="{{ $url }}" class="btn-ver-imovel">{{ i18n "view_property" }}</a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Contato Section -->
+<section id="contato">
+  <div class="section-header-banner">
+    <div class="container">
+      <h2 class="section-title">{{ i18n "contact_heading" }}</h2>
+      <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="section-back-top-btn" title="{{ i18n "back_to_top" }}" aria-label="{{ i18n "back_to_top" }}">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="contact-list">
+      <li class="contact-item">
+        {{ i18n "contact_whatsapp_text" }}
+        <a href="https://wa.me/5566992624916" target="_blank" class="whatsapp-link">(66) 9.9262-4916</a>
+        - {{ i18n "contact_owner_label" }}
+      </li>
+    </ul>
+
+    <div class="tenant-form-cta">
+      <p class="tenant-form-intro-text">{{ i18n "tenant_form_intro" }}</p>
+      <a class="btn-tenant-form" href="https://docs.google.com/forms/d/e/1FAIpQLSe59n6b4vakG24FJEUP6Q5fKKMuCh96G4R8I-fEc40uBu_pQQ/viewform" target="_blank" rel="noopener noreferrer">
+        {{ i18n "tenant_form_button" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

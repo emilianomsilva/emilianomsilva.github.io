@@ -129,3 +129,84 @@ other = "Presente"
 
 [years_short]
 other = "anos"
+
+[portfolio]
+other = "Portfólio"
+
+[real_estate_properties]
+other = "Imóveis disponíveis"
+
+[real_estate_brand_title]
+other = "More em uma <span class=\"highlight\">Casa Bem-Feita</span> 🏡"
+
+[real_estate_about_heading]
+other = "Quem somos"
+
+[real_estate_about]
+other = "Construímos imóveis destinados a venda e locação na cidade de Primavera do Leste, Mato Grosso. Oferecemos contratos facilitados, proporcionando tranquilidade e agilidade no processo de locação. Não somos imobiliária e não anunciamos imóveis de terceiros. Os imóveis anunciados neste site são gerenciados pelos respectivos proprietários."
+
+[real_estate_properties_heading]
+other = "Nossos imóveis"
+
+[view_property]
+other = "Ver imóvel"
+
+[contact_heading]
+other = "Contato"
+
+[real_estate_intro]
+other = "Portfólio Imobiliário"
+
+[view_properties]
+other = "Ver Imóveis"
+
+[contact_owner]
+other = "Falar com o Proprietário"
+
+[contact_owner_intro]
+other = "Tem interesse? Entre em contato via WhatsApp."
+
+[back_to_main]
+other = "Voltar ao site principal"
+
+[bedrooms]
+other = "dormitórios"
+
+[bathrooms]
+other = "banheiros"
+
+[unit_available]
+other = "Unidade disponível ✅"
+
+[unit_unavailable]
+other = "Nenhuma unidade disponível ⚠️"
+
+[property_features_heading]
+other = "Características do imóvel"
+
+[rent_price_label]
+other = "Valor do aluguel:"
+
+[bonus_label]
+other = "BÔNUS:"
+
+[meet_the_property_heading]
+other = "Conheça o imóvel"
+
+[property_location_heading]
+other = "Localização do imóvel"
+
+[contact_whatsapp_text]
+other = "Entre em contato via WhatsApp pelo número:"
+
+[contact_owner_label]
+other = "Falar com Emiliano (Proprietário)"
+
+[tenant_form_button]
+other = "Preencher Formulário de Cadastro de Interesse 📝"
+
+[tenant_form_heading]
+other = "Cadastro de Interesse para Locação"
+
+[tenant_form_intro]
+other = "Preencha seus dados para receber atendimento prioritário na análise de cadastro."

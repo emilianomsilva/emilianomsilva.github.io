@@ -19,3 +19,33 @@
 {{ $options := dict "targetPath" "css/style.css" "outputStyle" "compressed" }}
 {{ $style := resources.Get "scss/main.scss" | toCSS $options | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+
+<!-- Favicon Emoji -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+<!-- Detecção Inteligente de Idioma (Navegador + LocalStorage) -->
+<script>
+  (function() {
+    var path = window.location.pathname;
+    // Executa apenas se estiver acessando a raiz (ex: / ou /index.html)
+    if (path === '/' || path === '/index.html' || path === '') {
+      var savedLang = localStorage.getItem('user_lang');
+      var targetLang = savedLang;
+
+      if (!targetLang) {
+        var userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        if (userLang.startsWith('pt')) {
+          targetLang = 'pt';
+        } else if (userLang.startsWith('es')) {
+          targetLang = 'es';
+        } else {
+          targetLang = 'en';
+        }
+      }
+
+      if (targetLang && (targetLang === 'pt' || targetLang === 'es' || targetLang === 'en')) {
+        window.location.replace('/' + targetLang + '/');
+      }
+    }
+  })();
+</script>
