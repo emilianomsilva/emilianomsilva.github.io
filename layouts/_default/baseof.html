@@ -6,6 +6,7 @@
 <body>
   {{ partial "sidebar.html" . }}
   <main class="main-viewport">
+    {{ partial "mobile-topbar.html" . }}
     {{ partial "header.html" . }}
     <div class="scroll-container" id="scroll-area">
       {{ block "main" . }}{{ end }}
@@ -25,9 +26,12 @@
 
       menuItems.forEach(item => item.classList.toggle('active', item === activeItem));
       const label = activeItem.querySelector('.menu-label');
-      if (label && breadcrumbLabel) {
-        breadcrumbLabel.innerText = label.innerText.toUpperCase();
+      const sectionLabel = label ? label.innerText : activeItem.getAttribute('title');
+      if (sectionLabel && breadcrumbLabel) {
+        breadcrumbLabel.innerText = sectionLabel.toUpperCase();
       }
+      const mobileBreadcrumb = document.getElementById('current-section-name-mobile');
+      if (mobileBreadcrumb && sectionLabel) mobileBreadcrumb.innerText = sectionLabel.toUpperCase();
     }
 
     function scrollToSection(sectionId) {
@@ -84,6 +88,42 @@
       var hash = lastActiveSectionId ? '#' + lastActiveSectionId : window.location.hash;
       window.location.href = '/' + targetLang + '/' + hash;
     }
+
+    function toggleMobileLang(event) {
+      event.stopPropagation();
+      const dropdown = event.currentTarget.closest('.mobile-lang-dropdown');
+      const isOpen = dropdown.classList.toggle('open');
+      event.currentTarget.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    function updateMobileTopbar() {
+      const topbar = document.getElementById('mobile-topbar');
+      const nav = document.getElementById('mobile-topbar-nav');
+      if (!topbar || !nav) return;
+
+      nav.classList.remove('split');
+      nav.style.removeProperty('--per-row');
+      const requiredWidth = Array.from(nav.children).reduce((total, item) => total + item.scrollWidth, 0);
+      const needsSplit = requiredWidth > nav.clientWidth;
+      if (needsSplit) {
+        nav.style.setProperty('--per-row', Math.ceil(nav.children.length / 2));
+        nav.classList.add('split');
+      }
+      document.documentElement.style.setProperty('--mobile-topbar-height', `${topbar.offsetHeight}px`);
+    }
+
+    document.addEventListener('click', (event) => {
+      document.querySelectorAll('.mobile-lang-dropdown.open').forEach(dropdown => {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove('open');
+          const button = dropdown.querySelector('.mobile-lang-button');
+          if (button) button.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    window.addEventListener('resize', updateMobileTopbar);
+    window.addEventListener('load', updateMobileTopbar);
 
     // Scroll to section from hash on load if present
     window.addEventListener('DOMContentLoaded', () => {

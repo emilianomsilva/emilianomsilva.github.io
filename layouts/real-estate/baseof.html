@@ -116,27 +116,113 @@
 
     .main-wrapper.expanded { margin-left: 240px; width: calc(100% - 240px); }
 
-    @media (max-width: 768px) {
-      aside.sidebar-black { transform: translateX(-100%); width: 240px !important; }
-      aside.sidebar-black.mobile-open { transform: translateX(0); }
-      aside.sidebar-black.mobile-open .menu-label { display: inline !important; }
-      aside.sidebar-black.mobile-open .menu-item { justify-content: flex-start !important; }
+    @media (max-width: 640px) {
+      body { padding-top: var(--mobile-topbar-height, 0px); }
+      aside.sidebar-black { display: none; }
       .main-wrapper { margin-left: 0 !important; width: 100% !important; }
-      .mobile-toggle { display: flex !important; }
+
+      .mobile-topbar {
+        align-items: stretch;
+        background: #000000;
+        border-bottom: 1px solid #222222;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .mobile-topbar-nav {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0.35rem;
+        min-width: 0;
+        overflow: visible;
+        padding: 0.45rem 0.55rem;
+      }
+
+      .mobile-topbar-nav.split {
+        display: grid;
+        grid-template-columns: repeat(var(--per-row), minmax(0, 1fr));
+      }
+
+      .mobile-topbar-item {
+        align-items: center;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid #333333;
+        border-radius: 6px;
+        color: #9CA3AF;
+        cursor: pointer;
+        display: inline-flex;
+        flex: 0 0 auto;
+        height: 44px;
+        justify-content: center;
+        min-width: 44px;
+        margin-bottom: 0;
+        padding: 0.55rem;
+        text-decoration: none;
+        width: 100%;
+      }
+
+      .mobile-topbar-item:hover,
+      .mobile-topbar-item:focus-visible {
+        background: rgba(255, 255, 255, 0.2);
+        color: #F9FAFB;
+        outline: none;
+      }
+
+      .mobile-topbar-item.active {
+        background: #FFFFFF;
+        border-color: #FFFFFF;
+        color: #000000;
+      }
+
+      .mobile-topbar-item .svg-icon { height: 21px; stroke: currentColor; width: 21px; }
+      .mobile-topbar-nav.split .mobile-topbar-item { max-width: none; width: 100%; }
+      .mobile-lang-dropdown { flex: 0 0 auto; position: relative; }
+      .mobile-lang-button {
+        background: rgba(255, 255, 255, 0.08);
+        color: #F9FAFB;
+        font-family: monospace, monospace;
+        font-size: 0.72rem;
+        font-weight: 700;
+        width: 44px;
+      }
+
+      .mobile-lang-menu {
+        background: #000000;
+        border: 1px solid #333333;
+        border-radius: 5px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+        display: none;
+        min-width: 62px;
+        padding: 0.25rem;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 0.35rem);
+        z-index: 1001;
+      }
+
+      .mobile-lang-dropdown.open .mobile-lang-menu { display: flex; flex-direction: column; gap: 0.15rem; }
+      .mobile-lang-option {
+        color: #9CA3AF;
+        font-family: monospace, monospace;
+        font-size: 0.72rem;
+        padding: 0.45rem 0.55rem;
+        text-align: center;
+        text-decoration: none;
+      }
+      .mobile-lang-option:hover, .mobile-lang-option.active {
+        background: #FFFFFF;
+        border-radius: 3px;
+        color: #000000;
+      }
     }
 
-    .mobile-toggle {
-      display: none;
-      position: fixed;
-      top: 15px;
-      left: 15px;
-      z-index: 101;
-      background-color: #000000;
-      color: #ffffff;
-      border: 1px solid #333333;
-      padding: 10px;
-      border-radius: 4px;
-      cursor: pointer;
+    @media (min-width: 641px) {
+      .mobile-topbar { display: none; }
     }
 
     .sidebar-footer {
@@ -292,6 +378,7 @@
 
     .btn-ver-imovel {
       display: inline-block;
+      width: 100%;
       background-color: #1F3850;
       color: #ffffff;
       font-family: 'Source Sans Pro', sans-serif;
@@ -523,10 +610,36 @@
 </head>
 <body>
 
-  <!-- Mobile Toggle Button -->
-  <button class="mobile-toggle" onclick="toggleMobileSidebar()" aria-label="Menu">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-  </button>
+  <div class="mobile-topbar" id="mobile-topbar">
+    <nav class="mobile-topbar-nav" id="mobile-topbar-nav" aria-label="Mobile navigation">
+      <a class="mobile-topbar-item {{ if eq .RelPermalink ("/real-estate/" | relLangURL) }}active{{ end }}" href="{{ "real-estate/" | relLangURL }}" title="Início" aria-label="Início">
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </a>
+      {{ range site.Data.real_estate }}
+      {{ $url := printf "real-estate/%s/" .id | relLangURL }}
+      <a class="mobile-topbar-item {{ if eq $.RelPermalink $url }}active{{ end }}" href="{{ $url }}" title="{{ .title }}" aria-label="{{ .title }}">
+        {{ if eq .id "buritis-v" }}
+        <svg class="svg-icon" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></svg>
+        {{ else }}
+        <svg class="svg-icon" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        {{ end }}
+      </a>
+      {{ end }}
+      <a class="mobile-topbar-item" href="#contato" title="{{ i18n "contact" }}" aria-label="{{ i18n "contact" }}">
+        <svg class="svg-icon" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      </a>
+
+      {{ $currentLang := .Language.Lang }}
+      <div class="mobile-lang-dropdown">
+        <button class="mobile-topbar-item mobile-lang-button" type="button" onclick="toggleMobileLang(event)" aria-haspopup="true" aria-expanded="false" aria-label="Idioma">{{ upper $currentLang }}</button>
+        <div class="mobile-lang-menu" role="menu">
+          {{ range site.Languages }}
+          <a href="javascript:void(0)" class="mobile-lang-option{{ if eq .Lang $currentLang }} active{{ end }}" onclick="switchRealEstateLang(event, '{{ .Lang }}')" role="menuitem">{{ upper .Lang }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </nav>
+  </div>
 
   <!-- Sidebar -->
   <aside class="sidebar-black collapsed" id="sidebar">
@@ -606,10 +719,40 @@
       mainWrapper.classList.toggle('expanded');
     }
 
-    function toggleMobileSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('mobile-open');
+    function toggleMobileLang(event) {
+      event.stopPropagation();
+      const dropdown = event.currentTarget.closest('.mobile-lang-dropdown');
+      const isOpen = dropdown.classList.toggle('open');
+      event.currentTarget.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     }
+
+    function updateMobileTopbar() {
+      const topbar = document.getElementById('mobile-topbar');
+      const nav = document.getElementById('mobile-topbar-nav');
+      if (!topbar || !nav) return;
+
+      nav.classList.remove('split');
+      nav.style.removeProperty('--per-row');
+      const requiredWidth = Array.from(nav.children).reduce((total, item) => total + item.scrollWidth, 0);
+      if (requiredWidth > nav.clientWidth) {
+        nav.style.setProperty('--per-row', Math.ceil(nav.children.length / 2));
+        nav.classList.add('split');
+      }
+      document.documentElement.style.setProperty('--mobile-topbar-height', `${topbar.offsetHeight}px`);
+    }
+
+    document.addEventListener('click', (event) => {
+      document.querySelectorAll('.mobile-lang-dropdown.open').forEach(dropdown => {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove('open');
+          const button = dropdown.querySelector('.mobile-lang-button');
+          if (button) button.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    window.addEventListener('resize', updateMobileTopbar);
+    window.addEventListener('load', updateMobileTopbar);
 
     /* Lógica do Carrossel Lightbox */
     let currentLightboxIndex = 0;
